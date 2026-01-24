@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import SwiperDynamicServer from "@/components/shared/SwiperDynamicServer";
 
 const featuredArticlesData = [
@@ -56,20 +56,16 @@ export default function Section1() {
                         <div className="text-center">
                             <Link href="#" className="tag has-dot green text-nowrap rounded-pill">
                                 <span className="text-nowrap link-effect-1">
-                                    <span className="text-1">10k+ Satisfied Customers</span>
-                                    <span className="text-2">10k+ Satisfied Customers</span>
+                                    <span className="text-1">10k+ Data Points Tracked</span>
+                                    <span className="text-2">10k+ Data Points Tracked</span>
                                 </span>
                             </Link>
                             <h1 className="ds-5 mt-3">
-                                Discover fresh ideas
-                                <span className="d-inline-flex rounded-pill overflow-hidden mx-2">
-                                    <Image className="cover-image" src="/assets/imgs/page/img-88.webp" alt="d-couple" width={85} height={44} />
-                                </span>
-                                and creative inspiration at Foks
+                                Decoupling from Global Monopolies through Strategic Autonomy.
                             </h1>
                             <span className="fs-7 text-700">
-                                Explore breaking stories and cultural trends from across the globe, and <br className="d-none d-md-block" />
-                                hear the voices that are redefining how we see the world today.
+                                We provide the frameworks, data, and regional alternatives needed to <br className="d-none d-md-block" />
+                                counteract centralized actors and foster sovereign growth.
                             </span>
                         </div>
                     </div>
