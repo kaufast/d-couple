@@ -160,7 +160,14 @@ export default function Footer() {
                                     </svg>
                                 </a>
                             </div>
-                            <p className="text-500 m-0 mt-4">
+                            <div className="d-flex gap-3 justify-content-center mt-3 mb-3 fs-8">
+                                <Link href="/privacy" className="text-600 hover-text-dark">Privacy</Link>
+                                <span className="text-500">|</span>
+                                <Link href="/governance" className="text-600 hover-text-dark">Governance</Link>
+                                <span className="text-500">|</span>
+                                <Link href="/page-contact" className="text-600 hover-text-dark">Contact</Link>
+                            </div>
+                            <p className="text-500 m-0">
                                 © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                             </p>
                         </div>
