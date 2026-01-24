@@ -27,7 +27,7 @@ export default function Header4Server() {
                                         <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={24} height={24} alt="Logo" priority={true} />
                                         <strong className="fs-5 text-nowrap">dcouple.</strong>
                                     </Link>
-                                    <p className="fs-8">Thoughts, stories and ideas.</p>
+                                    <p className="fs-8">Strategic intelligence for autonomous growth.</p>
                                 </div>
                             </div>
                             <div className="col-12">
