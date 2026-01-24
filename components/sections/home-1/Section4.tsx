@@ -3,40 +3,40 @@ import SwiperDynamicServer from "@/components/shared/SwiperDynamicServer";
 
 const categoryData = [
     {
-        linkCategory: "/archive-1",
+        linkCategory: "/category/capital-lab",
         img: "/assets/imgs/page/img-14.webp",
-        category: "Lifestyle",
-        articlesCount: "158",
+        category: "Capital Lab",
+        articlesCount: "42",
     },
     {
-        linkCategory: "/archive-2",
+        linkCategory: "/category/logistics-autonomy",
         img: "/assets/imgs/page/img-15.webp",
-        category: "Culture",
-        articlesCount: "48",
+        category: "Logistics Autonomy",
+        articlesCount: "67",
     },
     {
-        linkCategory: "/archive-3",
+        linkCategory: "/category/sovereign-tech",
         img: "/assets/imgs/page/img-16.webp",
-        category: "Science",
-        articlesCount: "256",
+        category: "Sovereign Tech",
+        articlesCount: "89",
     },
     {
-        linkCategory: "/archive-4",
+        linkCategory: "/category/jurisdictional-law",
         img: "/assets/imgs/page/img-17.webp",
-        category: "Hobbies",
+        category: "Jurisdictional Law",
+        articlesCount: "54",
+    },
+    {
+        linkCategory: "/category/field-intel",
+        img: "/assets/imgs/page/img-18.webp",
+        category: "Field Intel",
         articlesCount: "128",
     },
     {
-        linkCategory: "/archive-5",
-        img: "/assets/imgs/page/img-18.webp",
-        category: "Gaming",
-        articlesCount: "64",
-    },
-    {
-        linkCategory: "/archive-6",
+        linkCategory: "/category/work-trade-autonomy",
         img: "/assets/imgs/page/img-19.webp",
-        category: "Work Life",
-        articlesCount: "32",
+        category: "Work/Trade Autonomy",
+        articlesCount: "76",
     },
 ];
 
@@ -46,7 +46,7 @@ export default function Section4({ classList }: { classList?: string }) {
                 <div className="container">
                     <div className="row g-3">
                         <div className={`col-12 ${classList}`}>
-                            <span className="fs-7 text-800 fw-bold">Browse by Category</span>
+                            <span className="fs-7 text-800 fw-bold">Strategic Sectors</span>
                         </div>
 
                         <div className="col-12">
