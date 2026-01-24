@@ -2,225 +2,206 @@ import Layout from '@/components/layout/Layout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Strategic Accountability Hub',
-  description: 'Privacy policy and data protection information.',
+  title: 'Sovereign Privacy Framework - dcouple.',
+  description: 'Our commitment to data sovereignty and privacy-by-design architecture for strategic autonomy.',
 };
 
 export default function PrivacyPage() {
   return (
-    <Layout headerStyle={1} footerStyle={1}>
+    <Layout headerStyle={4} footerStyle={4}>
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <h1 className="mb-4">Privacy Policy</h1>
-            <p className="lead">
-              Last updated: January 23, 2026
+            {/* Last Updated Timestamp */}
+            <div className="mb-4 pb-3 border-bottom border-300">
+              <div className="d-flex align-items-center gap-2">
+                <span className="badge bg-dark text-white px-3 py-2 rounded-pill fs-8">
+                  Last Updated: January 24, 2026
+                </span>
+              </div>
+            </div>
+
+            <h1 className="ds-6 fw-bold mb-4">Sovereign Privacy Framework</h1>
+            <p className="fs-6 text-700 mb-5">
+              Revised Privacy & Cookies Policy
             </p>
 
-            <hr className="my-4" />
+            <hr className="my-5 border-dark" />
 
-            <h2 className="h4 mb-3">1. Introduction</h2>
-            <p>
-              Strategic Accountability Hub ("we", "our", or "us") is committed to
-              protecting your privacy. This Privacy Policy explains how we collect,
-              use, disclose, and safeguard your information when you use our
-              platform.
-            </p>
+            {/* Section 1 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                1. Our Commitment to Data Sovereignty
+              </h2>
+              <p className="fs-7 text-700 lh-lg">
+                The <strong>dcouple.</strong> project operates on the principle of strategic autonomy.
+                We believe that privacy is not just a legal requirement but a fundamental component of
+                decoupling from centralized technocracies. This policy outlines our <strong>"privacy-by-design"</strong> architecture.
+              </p>
+            </section>
 
-            <h2 className="h4 mb-3 mt-4">2. Information We Collect</h2>
-            <h3 className="h5 mb-2">Account Information</h3>
-            <ul>
-              <li>Email address</li>
-              <li>Display name (optional)</li>
-              <li>Password (encrypted)</li>
-              <li>Institutional affiliation (optional)</li>
-              <li>Areas of expertise (optional)</li>
-            </ul>
+            {/* Section 2 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                2. Information We Collect (Data Minimization)
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                We collect only the minimum data necessary to verify intelligence and maintain the integrity
+                of the Oversight Directory.
+              </p>
 
-            <h3 className="h5 mb-2 mt-3">Content You Provide</h3>
-            <ul>
-              <li>Reports and submissions</li>
-              <li>Comments and votes</li>
-              <li>Tags and metadata</li>
-            </ul>
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Sovereign Account Data:</strong>
+                  <span className="text-700"> Email, an optional display name, and institutional affiliation (if provided for associate verification).</span>
+                </p>
 
-            <h3 className="h5 mb-2 mt-3">Automatically Collected Information</h3>
-            <ul>
-              <li>IP address (for security purposes)</li>
-              <li>Browser type and version</li>
-              <li>Device information</li>
-              <li>Usage data and analytics</li>
-              <li>Session information</li>
-            </ul>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Strategic Intelligence:</strong>
+                  <span className="text-700"> Reports, "Field Intel," and assessments you submit to the hub.</span>
+                </p>
 
-            <h2 className="h4 mb-3 mt-4">3. How We Use Your Information</h2>
-            <ul>
-              <li>To provide and maintain our service</li>
-              <li>To authenticate your identity</li>
-              <li>To enable report submission and voting</li>
-              <li>To improve user experience</li>
-              <li>To detect and prevent fraud or abuse</li>
-              <li>To comply with legal obligations</li>
-            </ul>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Zero-Tracking Analytics:</strong>
+                  <span className="text-700"> We collect limited technical data (IP address and browser type) solely for security purposes and to prevent automated "Big Actor" bot attacks.</span>
+                </p>
+              </div>
+            </section>
 
-            <h2 className="h4 mb-3 mt-4">4. Data Sharing</h2>
-            <p>We do not sell your personal data. We may share data in these cases:</p>
-            <ul>
-              <li>
-                <strong>Public Content:</strong> Reports marked as "unclassified" are
-                publicly visible
-              </li>
-              <li>
-                <strong>With Your Consent:</strong> When you explicitly agree to
-                share data
-              </li>
-              <li>
-                <strong>Legal Requirements:</strong> When required by law or to
-                protect rights and safety
-              </li>
-              <li>
-                <strong>Service Providers:</strong> With trusted third parties who
-                help operate our service (Supabase, Vercel)
-              </li>
-            </ul>
+            {/* Section 3 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                3. Data Decoupling & Sharing
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                We do not, and will never, sell your data to third-party advertising networks or data brokers.
+              </p>
 
-            <h2 className="h4 mb-3 mt-4">5. Data Security</h2>
-            <p>We implement security measures including:</p>
-            <ul>
-              <li>End-to-end encryption for sensitive data</li>
-              <li>Row-Level Security (RLS) in our database</li>
-              <li>HTTPS/TLS for all connections</li>
-              <li>Regular security audits</li>
-              <li>Access logging and monitoring</li>
-            </ul>
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Public Accountability:</strong>
+                  <span className="text-700"> Only content explicitly marked as "Unclassified" or "Public Report" will be visible in the Oversight Directory.</span>
+                </p>
 
-            <h2 className="h4 mb-3 mt-4">6. Your Rights (GDPR)</h2>
-            <p>You have the right to:</p>
-            <ul>
-              <li>
-                <strong>Access:</strong> Request a copy of your personal data
-              </li>
-              <li>
-                <strong>Rectification:</strong> Correct inaccurate data
-              </li>
-              <li>
-                <strong>Erasure:</strong> Request deletion of your data ("right to be
-                forgotten")
-              </li>
-              <li>
-                <strong>Portability:</strong> Receive your data in a portable format
-              </li>
-              <li>
-                <strong>Restriction:</strong> Limit how we use your data
-              </li>
-              <li>
-                <strong>Objection:</strong> Object to data processing
-              </li>
-            </ul>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Institutional Safeguards:</strong>
+                  <span className="text-700"> We use Supabase and Vercel for infrastructure. Their access is strictly limited to technical maintenance under encrypted protocols.</span>
+                </p>
+              </div>
+            </section>
 
-            <p className="mt-3">
-              To exercise these rights, contact us at{' '}
-              <a href="mailto:privacy@strategic-accountability-hub.com">
-                privacy@strategic-accountability-hub.com
-              </a>
-            </p>
+            {/* Section 4 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                4. Security & Encryption
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                Your data is protected by <strong>Institutional-Grade Security:</strong>
+              </p>
 
-            <h2 className="h4 mb-3 mt-4">7. Cookies</h2>
-            <h3 className="h5 mb-2">Essential Cookies</h3>
-            <p>
-              Required for authentication and session management. Cannot be disabled.
-            </p>
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Row-Level Security (RLS):</strong>
+                  <span className="text-700"> Ensures that private "Field Intel" is only accessible to authorized associates and administrators.</span>
+                </p>
 
-            <h3 className="h5 mb-2 mt-3">Analytics Cookies</h3>
-            <p>
-              Used to understand how users interact with our platform. Can be
-              rejected via the cookie consent banner.
-            </p>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">End-to-End Encryption:</strong>
+                  <span className="text-700"> All sensitive communication and jurisdictional legal guides are served over secure, encrypted tunnels.</span>
+                </p>
+              </div>
+            </section>
 
-            <h2 className="h4 mb-3 mt-4">8. Data Retention</h2>
-            <ul>
-              <li>
-                <strong>Account Data:</strong> Retained while your account is active
-              </li>
-              <li>
-                <strong>Reports:</strong> Retained indefinitely unless you request
-                deletion
-              </li>
-              <li>
-                <strong>Activity Logs:</strong> Retained for 90 days for security
-                purposes
-              </li>
-            </ul>
+            {/* Section 5 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                5. Cookie Policy (Privacy-First)
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                We have decoupled our platform from invasive tracking cookies.
+              </p>
 
-            <h2 className="h4 mb-3 mt-4">9. Children's Privacy</h2>
-            <p>
-              Our service is not intended for users under 18 years of age. We do
-              not knowingly collect information from children.
-            </p>
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Essential Cookies:</strong>
+                  <span className="text-700"> Required for your secure session and authentication. These do not track you across other websites.</span>
+                </p>
 
-            <h2 className="h4 mb-3 mt-4">10. International Data Transfers</h2>
-            <p>
-              Your data may be transferred to and processed in countries outside
-              your jurisdiction. We ensure appropriate safeguards are in place for
-              such transfers.
-            </p>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Functional Analytics:</strong>
+                  <span className="text-700"> We use privacy-respecting analytics that do not store personal identifiers or follow your behavior outside of the dcouple. domain.</span>
+                </p>
+              </div>
+            </section>
 
-            <h2 className="h4 mb-3 mt-4">11. Third-Party Services</h2>
-            <p>We use the following third-party services:</p>
-            <ul>
-              <li>
-                <strong>Supabase:</strong> Database and authentication (
-                <a
-                  href="https://supabase.com/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Privacy Policy
-                </a>
-                )
-              </li>
-              <li>
-                <strong>Vercel:</strong> Hosting and analytics (
-                <a
-                  href="https://vercel.com/legal/privacy-policy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Privacy Policy
-                </a>
-                )
-              </li>
-            </ul>
+            {/* Section 6 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                6. Your Sovereign Rights (GDPR+)
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                As an EU-focused hub, we adhere to the highest standards of the GDPR, granting you the right to:
+              </p>
 
-            <h2 className="h4 mb-3 mt-4">12. Changes to This Policy</h2>
-            <p>
-              We may update this Privacy Policy from time to time. Changes will be
-              posted on this page with an updated "Last updated" date.
-            </p>
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Full Erasure:</strong>
+                  <span className="text-700"> The "Right to be Forgotten" from our directory and logs.</span>
+                </p>
 
-            <h2 className="h4 mb-3 mt-4">13. Contact Us</h2>
-            <p>For privacy-related questions or requests:</p>
-            <ul>
-              <li>
-                Email:{' '}
-                <a href="mailto:privacy@strategic-accountability-hub.com">
-                  privacy@strategic-accountability-hub.com
-                </a>
-              </li>
-              <li>
-                Data Protection Officer:{' '}
-                <a href="mailto:dpo@strategic-accountability-hub.com">
-                  dpo@strategic-accountability-hub.com
-                </a>
-              </li>
-            </ul>
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Intel Portability:</strong>
+                  <span className="text-700"> The right to export your submitted research in a structured format.</span>
+                </p>
 
-            <hr className="my-4" />
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Access:</strong>
+                  <span className="text-700"> A complete record of any data associated with your sovereign ID.</span>
+                </p>
+              </div>
+            </section>
 
-            <div className="alert alert-info">
-              <strong>Note:</strong> This is a template privacy policy. Please
-              customize it to match your specific data processing activities and
-              legal requirements.
+            {/* Section 7 */}
+            <section className="mb-5">
+              <h2 className="fs-4 fw-bold text-dark mb-3">
+                7. Contact & Oversight
+              </h2>
+              <p className="fs-7 text-700 lh-lg mb-3">
+                For all privacy-related inquiries or to report a compliance issue:
+              </p>
+
+              <div className="ps-4">
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Security Desk:</strong>
+                  <a href="mailto:privacy@dcouple.com" className="text-700 text-decoration-underline"> privacy@dcouple.com</a>
+                </p>
+
+                <p className="fs-7 mb-2">
+                  <strong className="text-dark">Data Protection Officer:</strong>
+                  <a href="mailto:dpo@dcouple.com" className="text-700 text-decoration-underline"> dpo@dcouple.com</a>
+                </p>
+              </div>
+            </section>
+
+            <hr className="my-5 border-dark" />
+
+            {/* Implementation Notice */}
+            <div className="card border-dark bg-card p-4 mt-5">
+              <h3 className="fs-6 fw-bold text-dark mb-3">Implementation Notes</h3>
+              <p className="fs-7 text-700 mb-3">
+                This Sovereign Privacy Framework is integrated across the platform:
+              </p>
+              <ul className="fs-7 text-700 ps-4 mb-0">
+                <li className="mb-2">
+                  <strong>Footer Link:</strong> "Privacy & Governance" in bottom navigation
+                </li>
+                <li className="mb-2">
+                  <strong>Consent Banner:</strong> Lightweight, defaults to "Privacy-First" (Essential cookies only)
+                </li>
+                <li className="mb-2">
+                  <strong>Field Intel Form:</strong> Checkbox confirmation: "I understand my submission will be handled according to the Sovereign Privacy Framework"
+                </li>
+              </ul>
             </div>
           </div>
         </div>
