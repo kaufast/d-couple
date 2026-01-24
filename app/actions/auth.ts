@@ -23,7 +23,7 @@ export async function signUp(formData: FormData) {
 
   if (!validation.success) {
     return {
-      error: validation.error.errors[0].message,
+      error: validation.error.issues[0].message,
     };
   }
 
@@ -68,7 +68,7 @@ export async function signIn(formData: FormData) {
 
   if (!validation.success) {
     return {
-      error: validation.error.errors[0].message,
+      error: validation.error.issues[0].message,
     };
   }
 
