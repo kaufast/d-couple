@@ -13,16 +13,9 @@ export default function Topbar2() {
                         </div>
                     </div>
                     <div className="d-flex align-items-center justify-content-center gap-4 d-none d-md-block">
-                        <span className="fs-8 text-dark d-flex align-items-center justify-content-center gap-1">
-                            Get weekly updates with our
-                            <Link href="#newsletter" className="link-effect-1">
-                                <span className="text-1 text-700"> Newsletter </span>
-                                <span className="text-2 text-700"> Newsletter </span>
-                                <svg className="ms-1 dark-mode-invert" xmlns="http://www.w3.org/2000/svg" width="9" height="8" viewBox="0 0 9 8" fill="none">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M5.40693 0.336148L5.07078 0L4.39848 0.672297L4.73463 1.00845L7.25077 3.52461H0.475386H0V4.47538H0.475386H7.25077L4.73463 6.99156L4.39848 7.32769L5.07078 8.00001L5.40693 7.66382L8.62261 4.44819C8.87013 4.20066 8.87013 3.79933 8.62261 3.5518L5.40693 0.336148Z" fill="#171717" />
-                                </svg>
-                            </Link>
-                        </span>
+                        <Link href="/reports/submit" className="btn btn-sm btn-dark rounded-pill px-3 py-2 fs-8 fw-medium">
+                            📊 Submit Field Intel
+                        </Link>
                     </div>
                     <div className="d-flex align-items-center gap-3 ms-auto">
                         <div data-bs-toggle="modal" data-bs-target="#popupSearch" className="search-btn d-none d-md-flex align-items-center justify-content-center">

@@ -1,6 +1,6 @@
 import CardBlog10 from "@/components/cards/CardBlog10";
 import CardBlog8 from "@/components/cards/CardBlog8";
-import SideBar2 from "@/components/elements/sidebar2";
+import StrategicSidebar from "@/components/elements/StrategicSidebar";
 import SwiperDynamicServer from "@/components/shared/SwiperDynamicServer";
 import Section1Interactive from "./Section1Interactive";
 
@@ -224,7 +224,7 @@ export default function Section1Server() {
                         <Section1Interactive newsData={latestNewsData} />
                     </div>
                     <div className="col-lg-4">
-                        <SideBar2 displayFlashNews={true} displayTopAuthors={true} displayFollowUs={true} displayTrendingTopics={true} displayAds={true} />
+                        <StrategicSidebar />
                     </div>
                 </div>
             </div>
