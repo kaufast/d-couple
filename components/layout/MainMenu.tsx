@@ -4,66 +4,66 @@ import MostCommentsItem from "@/components/cards/MostCommentsItem";
 import TagList from "@/components/cards/TagList";
 import cardTagPopupSearch from "@/public/data/Tag_List.json";
 
-// Flash news data
-const flashNewsData = [
+// Intelligence Alerts data
+const intelligenceAlertsData = [
     {
         classList: "pt-0",
         classCard: "style-3",
-        linkPost: "/single-1",
+        linkPost: "/reports/big-tech-compliance",
         img: "/assets/imgs/page/img-9.webp",
-        title: "Time slowly fades where moss grows",
-        date: "Jun 13, 2025",
+        title: "Big Actor Compliance Shift: Tracking new data privacy loopholes in Silicon Valley technocracies",
+        date: "Jan 2026",
     },
     {
         classList: "",
         classCard: "style-3",
-        linkPost: "/single-2",
+        linkPost: "/reports/eu-sovereign-investment",
         img: "/assets/imgs/page/img-10.webp",
-        title: "The weight of light in endless fields",
-        date: "Jun 13, 2025",
+        title: "Regional Growth Win: A new EU-first investment platform launches for sovereign tech startups",
+        date: "Jan 2026",
     },
     {
         classList: "",
         classCard: "style-3",
-        linkPost: "/single-3",
+        linkPost: "/reports/legal-mobility-update",
         img: "/assets/imgs/page/img-11.webp",
-        title: "What the fire gently leaves behind",
-        date: "Jun 13, 2025",
+        title: "Legal Mobility Update: New jurisdictional protocols for asset preservation in rights-respecting regions",
+        date: "Jan 2026",
     },
     {
         classList: "",
         classCard: "style-3",
-        linkPost: "/single-4",
+        linkPost: "/reports/logistics-decoupling",
         img: "/assets/imgs/page/img-12.webp",
-        title: "A meadow quietly built from memory",
-        date: "Jun 13, 2025",
+        title: "Supply Chain Sovereignty: EU logistics cooperatives bypass Amazon distribution networks",
+        date: "Jan 2026",
     },
     {
         classList: "",
         classCard: "style-3",
-        linkPost: "/single-5",
+        linkPost: "/reports/cloud-sovereignty",
         img: "/assets/imgs/page/img-13.webp",
-        title: "How the desert softly dreams of rain",
-        date: "Jun 13, 2025",
+        title: "GAIA-X Progress Report: Regional cloud infrastructure adoption reaches critical mass in France",
+        date: "Jan 2026",
     },
 ];
 
-// Most comments data
-const mostCommentsData = [
+// Top Accountability Scores data
+const topAccountabilityData = [
     {
         number: 1,
-        linkPost: "/single-1",
-        title: "Beneath the soil, seeds whisper about another day",
+        linkPost: "/directory/amazon",
+        title: "Amazon - Compliance Score: 38% ↓ (Labor violations in EU warehouses)",
     },
     {
         number: 2,
-        linkPost: "/single-2",
-        title: "When machines learn to design themselves",
+        linkPost: "/directory/meta",
+        title: "Meta - Privacy Violations: 12 this quarter ↑ (GDPR non-compliance)",
     },
     {
         number: 3,
-        linkPost: "/single-3",
-        title: "The unseen future behind every interface",
+        linkPost: "/directory/apple",
+        title: "Apple - Regional Market Dominance: 67% ↑ (Anti-competitive practices)",
     },
 ];
 

@@ -4,45 +4,42 @@ import SwiperDynamicServer from "@/components/shared/SwiperDynamicServer";
 
 const featuredArticlesData = [
     {
-        linkPost: "/single-1",
-        linkCategory: "/archive-1",
-        category: "Solitude",
-        title: "There is a kind of peace only found in the fading of nature",
-        description: "When the green recedes, silence blooms. What's left is fragile — but beautifully still.",
-        linkAuthor: "/page-author",
+        linkPost: "/reports/logistics-monopolies-blueprint",
+        linkCategory: "/category/logistics",
+        category: "Regional Autonomy",
+        title: "The Blueprint for Regional Autonomy: Decoupling from Logistics Monopolies",
+        description: "Counteracting centralized technocracies requires more than oversight; it requires the active incubation of regional alternatives. Our latest briefing explores how EU-based logistics networks are utilizing peer-to-peer data mesh technology to bypass global logistics monopolies, returning economic weight to local stakeholders.",
+        linkAuthor: "/about-us",
         imgAuthor: "/assets/imgs/template/author/author-12.webp",
-        author: "Lora",
-        date: "January 25, 2025",
-        readTime: "6 mins read",
+        author: "d-couple Research",
+        date: "January 2026",
+        readTime: "12 mins read",
         img: "/assets/imgs/page/img-89.webp",
         tags: [
-            { link: "/archive-1", name: "silence" },
-            { link: "/archive-2", name: "noise" },
-            { link: "/archive-3", name: "solitude" },
-            { link: "/archive-4", name: "landscape" },
-            { link: "/archive-5", name: "mindfulness" },
-            { link: "/archive-6", name: "World" },
+            { link: "/category/logistics", name: "Logistics" },
+            { link: "/category/eu-funding", name: "EU Funding" },
+            { link: "/category/regional-alternatives", name: "Regional Alternatives" },
+            { link: "/category/governance", name: "Governance" },
+            { link: "/category/supply-chain", name: "Supply Chain" },
         ],
     },
     {
-        linkPost: "/single-1",
-        linkCategory: "/archive-1",
-        category: "Solitude",
-        title: "There is a kind of peace only found in the fading of nature",
-        description: "When the green recedes, silence blooms. What's left is fragile — but beautifully still.",
-        linkAuthor: "/page-author",
+        linkPost: "/reports/tech-sovereignty-framework",
+        linkCategory: "/category/governance",
+        category: "Tech Sovereignty",
+        title: "Digital Sovereignty Framework: How Regional Cloud Infrastructure Counters Big Tech",
+        description: "An analysis of EU-based alternatives to global supply chain technocracies. This report examines GAIA-X, sovereign cloud initiatives, and regional data centers that provide viable alternatives to AWS, Google Cloud, and Azure monopolies.",
+        linkAuthor: "/about-us",
         imgAuthor: "/assets/imgs/template/author/author-1.webp",
-        author: "Lora",
-        date: "January 25, 2025",
-        readTime: "6 mins read",
+        author: "d-couple Intelligence",
+        date: "January 2026",
+        readTime: "15 mins read",
         img: "/assets/imgs/page/img-62.webp",
         tags: [
-            { link: "/archive-1", name: "silence" },
-            { link: "/archive-2", name: "noise" },
-            { link: "/archive-3", name: "solitude" },
-            { link: "/archive-4", name: "landscape" },
-            { link: "/archive-5", name: "mindfulness" },
-            { link: "/archive-6", name: "World" },
+            { link: "/category/cloud-infrastructure", name: "Cloud Infrastructure" },
+            { link: "/category/data-sovereignty", name: "Data Sovereignty" },
+            { link: "/category/eu-policy", name: "EU Policy" },
+            { link: "/category/tech-monopolies", name: "Tech Monopolies" },
         ],
     },
 ];
@@ -64,8 +61,8 @@ export default function Section1() {
                                 Decoupling from Global Monopolies through Strategic Autonomy.
                             </h1>
                             <span className="fs-7 text-700">
-                                We provide the frameworks, data, and regional alternatives needed to <br className="d-none d-md-block" />
-                                counteract centralized actors and foster sovereign growth.
+                                Providing the blueprints, legal frameworks, and regional alternatives <br className="d-none d-md-block" />
+                                needed to foster sovereign growth.
                             </span>
                         </div>
                     </div>
@@ -78,7 +75,7 @@ export default function Section1() {
                                     <path fillRule="evenodd" clipRule="evenodd" d="M9.47104 2.625H8.81479V3.9375H9.47104H11.7583L7.43727 8.2585L5.43099 6.253C5.08926 5.9114 4.53533 5.91146 4.19367 6.25312L0.629567 9.81724L0.165527 10.2812L1.0936 11.2094L1.55764 10.7453L4.81244 7.4905L6.81872 9.49603C7.16045 9.83763 7.71438 9.83754 8.05604 9.49585L12.6863 4.86558V7.15279V7.80904H13.9988V7.15279V3.5C13.9988 3.01675 13.6071 2.625 13.1238 2.625H9.47104Z" fill="#171717" />
                                 </svg>
                             </div>
-                            <p className="fs-8 fw-bold text-uppercase mb-0">Featured Article</p>
+                            <p className="fs-8 fw-bold text-uppercase mb-0">Decoupling Growth Strategy</p>
                         </div>
                     </div>
                 </div>

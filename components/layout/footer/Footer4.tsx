@@ -3,77 +3,68 @@ import Image from "next/image";
 import MostCommentsItem from "@/components/cards/MostCommentsItem";
 import CardBlog7 from "@/components/cards/CardBlog7";
 
-const mostCommentsData = [
+const topAccountabilityData = [
     {
         number: 1,
-        linkPost: "/single-1",
-        title: "Beneath the soil, seeds whisper about another day",
+        linkPost: "/directory/amazon",
+        title: "Amazon - Compliance Score: 38% ↓",
     },
     {
         number: 2,
-        linkPost: "/single-2",
-        title: "The sea that quietly forgets our names",
+        linkPost: "/directory/meta",
+        title: "Meta - Privacy Violations: 12 this quarter ↑",
     },
     {
         number: 3,
-        linkPost: "/single-3",
-        title: "When the mountains breathe at first dawn",
+        linkPost: "/directory/apple",
+        title: "Apple - Regional Market Dominance: 67% ↑",
     },
     {
         number: 4,
-        linkPost: "/single-4",
-        title: "How the desert softly dreams of rain",
+        linkPost: "/directory/google",
+        title: "Google - GDPR Compliance: 45% ↓",
     },
 ];
 
 const popularArticlesData = [
     {
         classList: "pt-0",
-        linkPost: "/single-5",
+        linkPost: "/reports/eu-sovereign-investment",
         img: "/assets/imgs/page/img-43.webp",
-        title: "The last bird before the morning comes",
-        date: "Jun 13, 2025",
+        title: "EU-First Investment Platform for Sovereign Tech",
+        date: "Jan 2026",
     },
     {
         classList: "pt-0",
-        linkPost: "/single-6",
+        linkPost: "/reports/gaia-x-progress",
         img: "/assets/imgs/page/img-44.webp",
-        title: "Shadows that never learned to truly hide",
-        date: "Jun 13, 2025",
+        title: "GAIA-X: Regional Cloud Sovereignty Milestone",
+        date: "Jan 2026",
     },
     {
         classList: "p-0",
-        linkPost: "/single-7",
+        linkPost: "/reports/logistics-decoupling",
         img: "/assets/imgs/page/img-49.webp",
-        title: "Where the river turns back into silence",
-        date: "Jun 13, 2025",
+        title: "EU Logistics Cooperatives Bypass Amazon Networks",
+        date: "Jan 2026",
     },
 ];
 
 const categoriesCol1 = [
-    { name: "Lifestyle", link: "/archive-1" },
-    { name: "Business", link: "/archive-2" },
-    { name: "Science", link: "/archive-3" },
-    { name: "Technology", link: "/archive-4" },
-    { name: "Gaming", link: "/archive-5" },
-    { name: "Other", link: "/archive-6" },
+    { name: "EU Funding", link: "/category/eu-funding" },
+    { name: "Logistics", link: "/category/logistics" },
+    { name: "Privacy Tech", link: "/category/privacy-tech" },
+    { name: "Governance", link: "/category/governance" },
+    { name: "Asset Mobility", link: "/category/asset-mobility" },
+    { name: "Regional Markets", link: "/category/regional-markets" },
 ];
 
 const categoriesCol2 = [
-    { name: "Politics", link: "/archive-7" },
-    { name: "Health", link: "/archive-8" },
-    { name: "Renewal", link: "/archive-9" },
-    { name: "Reflection", link: "/archive-4" },
-    { name: "Wilderness", link: "/archive-3" },
-];
-
-const instagramImages = [
-    { img: "/assets/imgs/page/img-11.webp", link: "#" },
-    { img: "/assets/imgs/page/img-12.webp", link: "#" },
-    { img: "/assets/imgs/page/img-13.webp", link: "#" },
-    { img: "/assets/imgs/page/img-14.webp", link: "#" },
-    { img: "/assets/imgs/page/img-15.webp", link: "#" },
-    { img: "/assets/imgs/page/img-16.webp", link: "#" },
+    { name: "Compliance", link: "/category/compliance" },
+    { name: "Tech Sovereignty", link: "/category/tech-sovereignty" },
+    { name: "Supply Chain", link: "/category/supply-chain" },
+    { name: "Legal Frameworks", link: "/category/legal-frameworks" },
+    { name: "Big Tech", link: "/category/big-tech" },
 ];
 
 export default function Footer() {
@@ -83,10 +74,10 @@ export default function Footer() {
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-lg-3 col-md-6 col-12">
-                            <p className="fs-8 fw-bold text-uppercase mb-2">Most comments</p>
+                            <p className="fs-8 fw-bold text-uppercase mb-2">Top Accountability Scores</p>
                             <ul className="list-unstyled ps-0">
-                                {mostCommentsData.map((item, idx) => (
-                                    <MostCommentsItem key={idx} card={item} idx={idx} isLast={idx === mostCommentsData.length - 1} />
+                                {topAccountabilityData.map((item, idx) => (
+                                    <MostCommentsItem key={idx} card={item} idx={idx} isLast={idx === topAccountabilityData.length - 1} />
                                 ))}
                             </ul>
                         </div>
@@ -127,19 +118,12 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-5 col-10">
-                            <p className="fs-8 fw-bold text-uppercase mb-2">Instagram</p>
-                            <div className="d-flex flex-wrap gap-2 mb-4">
-                                {instagramImages.map((item, idx) => (
-                                    <div key={idx} className="hover-up hover-zoom-image size-75 rounded-4 overflow-hidden">
-                                        <Link href={item.link} className="card-img">
-                                            <Image className="cover-image" src={item.img} alt="d-couple" width={75} height={75} />
-                                        </Link>
-                                    </div>
-                                ))}
-                            </div>
-                            <Link href="#" className="text-dark text-decoration-underline">
-                                View more on @Foks
-                            </Link>
+                            <p className="fs-8 fw-bold text-uppercase mb-2">Newsletter</p>
+                            <p className="fs-7 text-700 mb-3">Subscribe to receive weekly intelligence briefings and regional growth updates.</p>
+                            <form className="newsletter-form">
+                                <input type="email" className="form-control rounded-pill mb-2" placeholder="Your email address" />
+                                <button type="submit" className="btn btn-dark rounded-pill w-100">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                     <div className="row pb-4 pt-4 border-top">
@@ -148,7 +132,7 @@ export default function Footer() {
                                 <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={24} height={24} alt="Logo" />
                                 <strong className="fs-5 text-nowrap">dcouple.</strong>
                             </Link>
-                            <p className="fs-7 text-700 mt-3 mb-3">Crafted for writers and storytellers, Oris offers a modern, timeless space where your words truly belong.</p>
+                            <p className="fs-7 text-700 mt-3 mb-3">dcouple. is a strategic research hub dedicated to monitoring centralized actors and fostering sovereign economic growth through regional alternatives.</p>
                             <div className="d-inline-flex group-social-icons">
                                 <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up">
                                     <svg className="dark-mode-invert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
