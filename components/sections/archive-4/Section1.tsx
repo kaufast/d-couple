@@ -211,7 +211,7 @@ export default function Section1() {
                         <div className="d-flex align-items-center gap-3 pt-4">
                             <div className="d-inline-flex">
                                 <div className="author-image avatar avatar-80 rounded-6 overflow-hidden">
-                                    <Image className="cover-image" src="/assets/imgs/page/img-21.webp" alt="foks" width={80} height={80} />
+                                    <Image className="cover-image" src="/assets/imgs/page/img-21.webp" alt="d-couple" width={80} height={80} />
                                 </div>
                             </div>
                             <ul className="list-unstyled gap-4 text-600 m-0 ps-0">

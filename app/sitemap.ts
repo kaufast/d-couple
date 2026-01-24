@@ -1,10 +1,10 @@
-import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/server';
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const supabase = await createClient();
+  const supabase = createAdminClient();
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://strategic-accountability-hub.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://d-couple.com';
 
   // Fetch all entities
   const { data: entities } = await supabase

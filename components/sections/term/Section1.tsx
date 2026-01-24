@@ -20,7 +20,7 @@ export default function Section1() {
 
                         <div className="block-term">
                             <h4 className="mb-2 text-850">Changes to Terms</h4>
-                            <p className="fs-18 text-850 fw-medium mt-0">Foks may update these Terms from time to time. We will post the revised Terms on the website with an updated effective date. Continued use after changes constitutes acceptance of the updated Terms.</p>
+                            <p className="fs-18 text-850 fw-medium mt-0">dcouple may update these Terms from time to time. We will post the revised Terms on the website with an updated effective date. Continued use after changes constitutes acceptance of the updated Terms.</p>
                         </div>
 
                         <div className="block-term">
@@ -87,7 +87,7 @@ export default function Section1() {
 
                         <div className="block-term">
                             <h4 className="mb-2 text-850">Third-Party Links and Services</h4>
-                            <p className="fs-18 text-850 fw-medium mt-0">Foks may contain links to third-party websites or services. We do not control or endorse those sites and are not responsible for their content or practices. Your interactions with third parties are at your own risk</p>
+                            <p className="fs-18 text-850 fw-medium mt-0">dcouple may contain links to third-party websites or services. We do not control or endorse those sites and are not responsible for their content or practices. Your interactions with third parties are at your own risk</p>
                         </div>
 
                         <div className="block-term">

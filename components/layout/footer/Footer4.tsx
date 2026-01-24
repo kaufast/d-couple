@@ -132,7 +132,7 @@ export default function Footer() {
                                 {instagramImages.map((item, idx) => (
                                     <div key={idx} className="hover-up hover-zoom-image size-75 rounded-4 overflow-hidden">
                                         <Link href={item.link} className="card-img">
-                                            <Image className="cover-image" src={item.img} alt="foks" width={75} height={75} />
+                                            <Image className="cover-image" src={item.img} alt="d-couple" width={75} height={75} />
                                         </Link>
                                     </div>
                                 ))}
@@ -146,7 +146,7 @@ export default function Footer() {
                         <div className="col-lg-5 col-md-7 col-12 mx-auto text-center">
                             <Link className="navbar-brand d-flex align-items-center justify-content-center gap-1" href="/">
                                 <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={24} height={24} alt="Logo" />
-                                <strong className="fs-5 text-nowrap">Foks.</strong>
+                                <strong className="fs-5 text-nowrap">dcouple.</strong>
                             </Link>
                             <p className="fs-7 text-700 mt-3 mb-3">Crafted for writers and storytellers, Oris offers a modern, timeless space where your words truly belong.</p>
                             <div className="d-inline-flex group-social-icons">
@@ -177,7 +177,7 @@ export default function Footer() {
                                 </a>
                             </div>
                             <p className="text-500 m-0 mt-4">
-                                © 2025 <span className="text-dark">Foks</span>. All Rights Reserved.
+                                © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                             </p>
                         </div>
                     </div>

@@ -43,25 +43,25 @@ export default function PortfolioCard({ card, idx }: CardProps) {
                     <div className="d-flex flex-wrap align-items-center gap-4 pt-4">
                         {card.author && (
                             <div className="d-flex align-items-center gap-1">
-                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/person.svg" alt="foks" width={24} height={24} />
+                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/person.svg" alt="d-couple" width={24} height={24} />
                                 <span className="fs-8 fw-medium">{card.author}</span>
                             </div>
                         )}
                         {card.date && (
                             <div className="d-flex align-items-center gap-1">
-                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/calendar.svg" alt="foks" width={24} height={24} />
+                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/calendar.svg" alt="d-couple" width={24} height={24} />
                                 <span className="fs-8 fw-medium">{card.date}</span>
                             </div>
                         )}
                         {card.tools && (
                             <div className="d-flex align-items-center gap-1">
-                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/ruler.svg" alt="foks" width={24} height={24} />
+                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/ruler.svg" alt="d-couple" width={24} height={24} />
                                 <span className="fs-8 fw-medium">{card.tools}</span>
                             </div>
                         )}
                         {card.price && (
                             <div className="d-flex align-items-center gap-1">
-                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/wallet.svg" alt="foks" width={24} height={24} />
+                                <Image className="icon-person size-24 dark-mode-invert" src="/assets/imgs/template/icons/wallet.svg" alt="d-couple" width={24} height={24} />
                                 <span className="fs-8 fw-medium">{card.price}</span>
                             </div>
                         )}

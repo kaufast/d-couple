@@ -15,7 +15,7 @@ export default function Section1() {
                         </Link>
                         <div className="d-flex flex-column align-items-center justify-content-center mt-3">
                             <div className="size-100 rounded-circle overflow-hidden">
-                                <Image src="/assets/imgs/template/author/author-13.webp" alt="foks" className="cover-image" width={100} height={100} />
+                                <Image src="/assets/imgs/template/author/author-13.webp" alt="d-couple" className="cover-image" width={100} height={100} />
                             </div>
                             <h1 className="my-1 h3">Thomas Foks</h1>
                             <p className="fs-6 mb-2">

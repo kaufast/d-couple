@@ -46,7 +46,7 @@ export default function Section1() {
                         <div className="information justify-content-lg-end justify-content-start">
                             <Link href="/page-author" className="author">
                                 <span className="author-img">
-                                    <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="foks" width={24} height={24} />
+                                    <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="d-couple" width={24} height={24} />
                                 </span>
                                 <span className="author-info">Lora</span>
                             </Link>
@@ -62,7 +62,7 @@ export default function Section1() {
                     </div>
                     <div className="col-lg-12 mt-4">
                         <div className="image rounded-6 overflow-hidden">
-                            <Image className="w-100 cover-image" src="/assets/imgs/page/img-162.webp" alt="foks" width={700} height={400} />
+                            <Image className="w-100 cover-image" src="/assets/imgs/page/img-162.webp" alt="d-couple" width={700} height={400} />
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function NotFound() {
                     <div className="col-lg-7 col-md-8 col-12 mx-auto">
                         <div className="text-center">
                             <div className="imgs-404">
-                                <Image className="img" src="/assets/imgs/other/404.webp" alt="foks" width={320} height={118} />
+                                <Image className="img" src="/assets/imgs/other/404.webp" alt="d-couple" width={320} height={118} />
                             </div>
                             <h1 className="mt-3 h2">Oops! We Can't find that page</h1>
                             <p className="fs-6 text-850 fw-medium">

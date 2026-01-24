@@ -124,7 +124,7 @@ export default function SideBar3({ displayFollowUs = true }: { displayFollowUs?:
                             {authorAvatars.map((author, idx) => (
                                 <div key={idx} className={`avatar avatar-sm rounded-circle overflow-hidden border-2 border-white ${author.zIndex} hover-up`}>
                                     <Link href={author.link}>
-                                        <Image src={author.img} alt="foks" width={40} height={40} />
+                                        <Image src={author.img} alt="d-couple" width={40} height={40} />
                                     </Link>
                                 </div>
                             ))}

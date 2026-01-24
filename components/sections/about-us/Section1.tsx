@@ -22,12 +22,12 @@ export default function Section1() {
                             </h1>
                         </div>
                         <div className="col-lg-6 mb-3 mb-lg-0">
-                            <Image src="/assets/imgs/page/img-108.webp" alt="foks" className="cover-image" width={600} height={400} />
+                            <Image src="/assets/imgs/page/img-108.webp" alt="d-couple" className="cover-image" width={600} height={400} />
                         </div>
                         <div className="col-lg-6">
                             <div className="d-flex align-items-center gap-3 mb-2">
-                                <Image src="/assets/imgs/page/img-109.webp" alt="foks" className="cover-image" width={300} height={200} />
-                                <Image src="/assets/imgs/page/img-110.webp" alt="foks" className="cover-image" width={300} height={200} />
+                                <Image src="/assets/imgs/page/img-109.webp" alt="d-couple" className="cover-image" width={300} height={200} />
+                                <Image src="/assets/imgs/page/img-110.webp" alt="d-couple" className="cover-image" width={300} height={200} />
                             </div>
                             <h5 className="my-3">
                                 Crafting tales that echo <br />
@@ -58,16 +58,16 @@ export default function Section1() {
                     </div>
                     <div className="row pt-4">
                         <div className="col-lg-3 col-md-6 col-12">
-                            <Image src="/assets/imgs/page/img-111.webp" alt="foks" className="cover-image" width={300} height={200} />
+                            <Image src="/assets/imgs/page/img-111.webp" alt="d-couple" className="cover-image" width={300} height={200} />
                         </div>
                         <div className="col-lg-3 col-md-6 col-12">
-                            <Image src="/assets/imgs/page/img-112.webp" alt="foks" className="cover-image" width={300} height={200} />
+                            <Image src="/assets/imgs/page/img-112.webp" alt="d-couple" className="cover-image" width={300} height={200} />
                         </div>
                         <div className="col-lg-3 col-md-6 col-12">
-                            <Image src="/assets/imgs/page/img-113.webp" alt="foks" className="cover-image" width={300} height={200} />
+                            <Image src="/assets/imgs/page/img-113.webp" alt="d-couple" className="cover-image" width={300} height={200} />
                         </div>
                         <div className="col-lg-3 col-md-6 col-12">
-                            <Image src="/assets/imgs/page/img-114.webp" alt="foks" className="cover-image" width={300} height={200} />
+                            <Image src="/assets/imgs/page/img-114.webp" alt="d-couple" className="cover-image" width={300} height={200} />
                         </div>
                     </div>
                     <div className="row pt-4">
@@ -159,24 +159,24 @@ export default function Section1() {
                                     <h6 className="fs-7 text-700 mb-0 fw-medium">Years experience</h6>
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-1.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-1.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                                 <div className="size-100 rounded-6 bg-card border-300 p-3 d-flex flex-column align-items-center justify-content-center text-center">
                                     <h5 className="mb-1">250+</h5>
                                     <h6 className="fs-7 text-700 mb-0 fw-medium">Projects finished</h6>
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-2.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-2.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-3.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-3.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                                 <div className="size-100 rounded-6 bg-card border-300 p-3 d-flex flex-column align-items-center justify-content-center text-center">
                                     <h5 className="mb-1">2k</h5>
                                     <h6 className="fs-7 text-700 mb-0 fw-medium">Happy Clients</h6>
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-4.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-4.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                                 <div className="size-100 rounded-6 bg-card border-300 p-3 d-flex flex-column align-items-center justify-content-center text-center">
                                     <h5 className="mb-1">15k+</h5>
@@ -187,14 +187,14 @@ export default function Section1() {
                                     <h6 className="fs-7 text-700 mb-0 fw-medium">Social Followers</h6>
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-5.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-5.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                                 <div className="size-100 rounded-6 bg-card border-300 p-3 d-flex flex-column align-items-center justify-content-center text-center">
                                     <h5 className="mb-1">17</h5>
                                     <h6 className="fs-7 text-700 mb-0 fw-medium">Global Branch</h6>
                                 </div>
                                 <div className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                    <Image src="/assets/imgs/template/icons/icon-6.svg" alt="foks" width={50} height={50} />
+                                    <Image src="/assets/imgs/template/icons/icon-6.svg" alt="d-couple" width={50} height={50} />
                                 </div>
                             </div>
                         </div>

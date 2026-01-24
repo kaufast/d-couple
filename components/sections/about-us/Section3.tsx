@@ -9,9 +9,9 @@ const faqItems = [
             <>
                 <p className="fs-6 mt-0 fw-medium pt-2">When you purchase from ThemeForest, you will be able to download:</p>
                 <ol>
-                    <li>Foks HTML template, Includes 27 complete projects.</li>
-                    <li>Foks Development souce code (Gulp, Sass)</li>
-                    <li>Foks figma design file (download link)</li>
+                    <li>dcouple HTML template, Includes 27 complete projects.</li>
+                    <li>dcouple Development souce code (Gulp, Sass)</li>
+                    <li>dcouple figma design file (download link)</li>
                     <li>
                         <a href={EXTERNAL_URLS.DOCUMENTATION} target="_blank" rel="noopener noreferrer">
                             Documentation
@@ -42,7 +42,7 @@ const faqItems = [
         question: "How does Foks ensure content quality?",
         answer: (
             <>
-                <p className="fs-6 mt-0 fw-medium pt-2">Foks provides comprehensive support, including:</p>
+                <p className="fs-6 mt-0 fw-medium pt-2">dcouple provides comprehensive support, including:</p>
                 <ol>
                     <li>
                         <strong>Documentation & Guides</strong> – Step-by-step instructions to help you set up and customize templates.
@@ -101,7 +101,7 @@ export default function Section3() {
                 <div className="row pt-5 g-5">
                     <div className="col-lg-4">
                         <div>
-                            <Image src="/assets/imgs/page/img-119.webp" alt="foks" className="cover-image" width={400} height={500} />
+                            <Image src="/assets/imgs/page/img-119.webp" alt="d-couple" className="cover-image" width={400} height={500} />
                         </div>
                         <div className="ps-3">
                             <h3 className="py-3 mb-3 border-bottom-900">

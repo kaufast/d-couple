@@ -18,7 +18,7 @@ export default function Header6Server() {
                             <div className="d-flex align-items-center">
                                 <Link className="navbar-brand d-flex align-items-center gap-1" href="/index-6">
                                     <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={24} height={24} alt="Logo" />
-                                    <strong className="fs-5 text-nowrap">Foks.</strong>
+                                    <strong className="fs-5 text-nowrap">dcouple.</strong>
                                 </Link>
                             </div>
                             <div className="navbar-collapse d-none d-lg-block" id="navbarNav">

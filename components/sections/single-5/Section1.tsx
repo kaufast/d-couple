@@ -10,14 +10,14 @@ export default function Section1() {
                 <div className="row main-content align-items-end">
                     <div className="col-12">
                         <div className="image rounded-6 overflow-hidden">
-                            <Image className="w-100 cover-image" src="/assets/imgs/page/img-166.webp" alt="foks" width={700} height={400} />
+                            <Image className="w-100 cover-image" src="/assets/imgs/page/img-166.webp" alt="d-couple" width={700} height={400} />
                         </div>
                     </div>
                     <div className="col-lg-6 pb-4 pb-lg-0">
                         <div className="information pt-3 mt-3 justify-content-start">
                             <Link href="/page-author" className="author">
                                 <span className="author-img">
-                                    <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="foks" width={24} height={24} />
+                                    <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="d-couple" width={24} height={24} />
                                 </span>
                                 <span className="author-info">Lora</span>
                             </Link>

@@ -53,7 +53,7 @@ export default function Footer() {
                             <div className="border-top-900 pt-4">
                                 <Link className="navbar-brand d-flex align-items-center gap-1" href="/">
                                     <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" alt="Logo" width={16} height={16} />
-                                    <strong className="fs-5 text-nowrap">Foks.</strong>
+                                    <strong className="fs-5 text-nowrap">dcouple.</strong>
                                 </Link>
 
                                 <p className="fs-7 text-dark mt-4 mb-2">Crafted for writers and storytellers, Oris offers a modern, timeless space where your words truly belong.</p>
@@ -143,7 +143,7 @@ export default function Footer() {
                     <div className="row pb-3 pt-3 mt-4 border-top">
                         <div className="col-lg-5 col-md-7 col-12 mx-auto text-center">
                             <p className="text-500 m-0">
-                                © 2025 <span className="text-dark">Foks</span>. All Rights Reserved.
+                                © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                             </p>
                         </div>
                     </div>

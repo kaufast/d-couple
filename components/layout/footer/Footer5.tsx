@@ -51,7 +51,7 @@ export default function Footer() {
                         <div className="col-lg-5 col-md-7">
                             <Link className="navbar-brand d-flex align-items-center gap-1" href="/">
                                 <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" alt="Logo" width={16} height={16} />
-                                <strong className="fs-5 text-nowrap">Foks.</strong>
+                                <strong className="fs-5 text-nowrap">dcouple.</strong>
                             </Link>
 
                             <p className="fs-7 text-dark mt-4 mb-4">Crafted for writers and storytellers, Foks offers a modern, timeless space where your words truly belong.</p>
@@ -124,7 +124,7 @@ export default function Footer() {
                         <div className="col-12">
                             <div className="d-flex justify-content-between align-items-center py-3 mt-3 border-top">
                                 <p className="text-500 m-0">
-                                    © 2025 <span className="text-dark">Foks</span>. All Rights Reserved.
+                                    © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                                 </p>
                                 <div className="d-inline-flex group-social-icons">
                                     <a href="#" className="icon-shape icon-30 hover-up">

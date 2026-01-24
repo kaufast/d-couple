@@ -83,7 +83,7 @@ export default function Section4() {
                                 } else {
                                     return (
                                         <div key={idx} className="size-100 d-flex flex-column align-items-center justify-content-center text-center dark-mode-invert">
-                                            <Image src={`/assets/imgs/template/icons/${item.icon}`} alt="foks" width={32} height={32} />
+                                            <Image src={`/assets/imgs/template/icons/${item.icon}`} alt="d-couple" width={32} height={32} />
                                         </div>
                                     );
                                 }

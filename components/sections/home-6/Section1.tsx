@@ -63,7 +63,7 @@ export default function Section1() {
                             <h1 className="ds-5 mt-3">
                                 Discover fresh ideas
                                 <span className="d-inline-flex rounded-pill overflow-hidden mx-2">
-                                    <Image className="cover-image" src="/assets/imgs/page/img-88.webp" alt="foks" width={85} height={44} />
+                                    <Image className="cover-image" src="/assets/imgs/page/img-88.webp" alt="d-couple" width={85} height={44} />
                                 </span>
                                 and creative inspiration at Foks
                             </h1>
@@ -105,7 +105,7 @@ export default function Section1() {
                                     <div className="swiper-slide" key={idx}>
                                         <div className="card-blog card-feature hover-up hover-zoom-image pt-1 flex-column shadow-0 flex-lg-row bg-body border-0">
                                             <Link href={card.linkPost} className="card-img rounded-6 overflow-hidden">
-                                                <Image className="image cover-image" src={card.img} alt="foks" width={600} height={400} />
+                                                <Image className="image cover-image" src={card.img} alt="d-couple" width={600} height={400} />
                                             </Link>
                                             <div className="card-body">
                                                 <Link href={card.linkCategory} className="tag has-dot text-nowrap">
@@ -123,7 +123,7 @@ export default function Section1() {
                                                 <div className="information pt-3 mt-3 border-top">
                                                     <Link href={card.linkAuthor} className="author">
                                                         <span className="author-img">
-                                                            <Image src={card.imgAuthor} alt="foks" width={24} height={24} />
+                                                            <Image src={card.imgAuthor} alt="d-couple" width={24} height={24} />
                                                         </span>
                                                         <span className="author-info">{card.author}</span>
                                                     </Link>

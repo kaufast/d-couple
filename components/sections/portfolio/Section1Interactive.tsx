@@ -78,7 +78,7 @@ function PortfolioCardItem({ card }: { card: PortfolioCard }) {
                 </Link>
             </div>
             <Link href="/portfolio-details" className="card-img d-inline-block">
-                <Image className="image cover-image" src={card.img} alt="foks" width={600} height={400} />
+                <Image className="image cover-image" src={card.img} alt="d-couple" width={600} height={400} />
             </Link>
         </div>
     );

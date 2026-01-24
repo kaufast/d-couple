@@ -13,7 +13,7 @@ export default function Section1() {
                     <div className="col-lg-12 mt-4">
                         <div className="card-blog card-9 position-relative">
                             <div className="image min-height-300 ds-grid rounded-6 overflow-hidden">
-                                <Image className="w-100 cover-image" src="/assets/imgs/page/img-163.webp" alt="foks" width={1200} height={300} />
+                                <Image className="w-100 cover-image" src="/assets/imgs/page/img-163.webp" alt="d-couple" width={1200} height={300} />
                             </div>
                             <div className="card-body border-0 mb-4">
                                 <div className="information justify-content-start">
@@ -52,7 +52,7 @@ export default function Section1() {
                                 <div className="information pt-3 mt-3 justify-content-start">
                                     <Link href="/page-author" className="author">
                                         <span className="author-img">
-                                            <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="foks" width={24} height={24} />
+                                            <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="d-couple" width={24} height={24} />
                                         </span>
                                         <span className="author-info text-white changeless">Lora</span>
                                     </Link>

@@ -20,7 +20,7 @@ export default function Header5Server() {
                             </div>
                             <Link className="navbar-brand d-flex align-items-center gap-1 position-lg-absolute" href="/index-5">
                                 <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={16} height={16} alt="Logo" />
-                                <strong className="fs-5 text-nowrap">Foks.</strong>
+                                <strong className="fs-5 text-nowrap">dcouple.</strong>
                             </Link>
                             <div className="group-btn-right d-flex align-items-center ms-auto">
                                 <HeaderSearchButton />

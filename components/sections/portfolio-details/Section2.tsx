@@ -13,7 +13,7 @@ export default function Section2() {
                         <div className="card-portfolio2 d-flex gap-3 mb-4 mb-lg-0">
                             <div className="card-img-top">
                                 <Link href="/portfolio-details">
-                                    <Image src="/assets/imgs/page/img-176.webp" alt="foks" className="w-100" width={200} height={200} />
+                                    <Image src="/assets/imgs/page/img-176.webp" alt="d-couple" className="w-100" width={200} height={200} />
                                 </Link>
                             </div>
                             <div className="card-body">
@@ -42,7 +42,7 @@ export default function Section2() {
                         <div className="card-portfolio2 d-flex gap-3">
                             <div className="card-img-top">
                                 <Link href="/portfolio-details">
-                                    <Image src="/assets/imgs/page/img-177.webp" alt="foks" className="w-100" width={200} height={200} />
+                                    <Image src="/assets/imgs/page/img-177.webp" alt="d-couple" className="w-100" width={200} height={200} />
                                 </Link>
                             </div>
                             <div className="card-body">

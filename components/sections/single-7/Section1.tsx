@@ -19,7 +19,7 @@ export default function Section1() {
                             <div className="information pt-3 justify-content-start">
                                 <Link href="/page-author" className="author">
                                     <span className="author-img">
-                                        <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="foks" width={24} height={24} />
+                                        <Image className="size-24" src="/assets/imgs/template/author/author-12.webp" alt="d-couple" width={24} height={24} />
                                     </span>
                                     <span className="author-info">Lora</span>
                                 </Link>

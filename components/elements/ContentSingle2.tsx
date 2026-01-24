@@ -107,7 +107,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                         <p className="mb-4 text-850 m-0 fs-18">For centuries, we believed the world revolved around our presence. But as the cities slept and skies cleared, nature reminded us that it thrives in stillness. We are not its masters or saviors; we are guests who stayed too long. The balance was never ours to hold — only to respect.</p>
                     </div>
 
-                    <Image className="rounded-6 overflow-hidden cover-image" src={image} alt="foks" width={1200} height={600} />
+                    <Image className="rounded-6 overflow-hidden cover-image" src={image} alt="d-couple" width={1200} height={600} />
 
                     <p className="text-700 m-0 fs-8 text-center">Silence is the sound of the world remembering itself</p>
 
@@ -175,7 +175,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                                     <div className="d-flex align-items-center gap-2">
                                         <div className="card-img-container rounded-8 size-38 overflow-hidden">
                                             <Link href="/page-author" className="card-img">
-                                                <Image className="cover-image" src="/assets/imgs/template/author/author-4.webp" alt="foks" width={38} height={38} />
+                                                <Image className="cover-image" src="/assets/imgs/template/author/author-4.webp" alt="d-couple" width={38} height={38} />
                                             </Link>
                                         </div>
                                         <div className="card-body">
@@ -225,7 +225,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                             <div className="d-flex justify-content-between gap-md-4 gap-0 pt-3">
                                 <div className="d-flex align-items-center gap-2 pt-1">
                                     <Link href="/single-1" className="author size-70 d-flex align-items-center gap-2">
-                                        <Image className="rounded-8 cover-image" src="/assets/imgs/page/img-161.webp" alt="foks" width={70} height={70} />
+                                        <Image className="rounded-8 cover-image" src="/assets/imgs/page/img-161.webp" alt="d-couple" width={70} height={70} />
                                     </Link>
                                     <div className="w-75">
                                         <ul className="m-0 ps-3">
@@ -243,7 +243,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
 
                                 <div className="d-flex align-items-center gap-2 pt-1">
                                     <Link href="/single-3" className="author size-70 d-flex align-items-center gap-2">
-                                        <Image className="rounded-8 cover-image" src="/assets/imgs/page/img-34.webp" alt="foks" width={70} height={70} />
+                                        <Image className="rounded-8 cover-image" src="/assets/imgs/page/img-34.webp" alt="d-couple" width={70} height={70} />
                                     </Link>
                                     <div className="w-75">
                                         <ul className="m-0 ps-3">
@@ -324,7 +324,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                         <div className="d-flex flex-wrap flex-lg-nowrap gap-3 align-items-start pt-4">
                             <div className="d-block">
                                 <div className="avatar avatar-lg rounded-6 m-0 overflow-hidden border-4 border-white shadow-1 z-2 hover-up-scale">
-                                    <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-18.webp" alt="foks" width={60} height={60} />
+                                    <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-18.webp" alt="d-couple" width={60} height={60} />
                                 </div>
                             </div>
                             <div>
@@ -342,7 +342,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                         <div className="d-flex flex-wrap flex-lg-nowrap gap-3 align-items-start pt-4">
                             <div className="d-block">
                                 <div className="avatar avatar-lg rounded-6 m-0 overflow-hidden border-4 border-white shadow-1 z-2 hover-up-scale">
-                                    <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-3.webp" alt="foks" width={60} height={60} />
+                                    <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-3.webp" alt="d-couple" width={60} height={60} />
                                 </div>
                             </div>
                             <div>
@@ -361,7 +361,7 @@ export default function ContentSingle2({ image = "/assets/imgs/page/img-1.webp",
                             <div className="d-flex flex-wrap flex-lg-nowrap gap-3 align-items-start pt-4">
                                 <div className="d-block">
                                     <div className="avatar avatar-lg rounded-6 m-0 overflow-hidden border-4 border-white shadow-1 z-2 hover-up-scale">
-                                        <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-19.webp" alt="foks" width={60} height={60} />
+                                        <Image className="cover-image rounded-6" src="/assets/imgs/template/author/author-19.webp" alt="d-couple" width={60} height={60} />
                                     </div>
                                 </div>
                                 <div>

@@ -25,7 +25,7 @@ export default function Header4Server() {
                                 <div className="text-center navbar-brand-container pt-4">
                                     <Link className="navbar-brand d-flex align-items-center justify-content-center gap-1" href="/">
                                         <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={24} height={24} alt="Logo" priority={true} />
-                                        <strong className="fs-5 text-nowrap">Foks.</strong>
+                                        <strong className="fs-5 text-nowrap">dcouple.</strong>
                                     </Link>
                                     <p className="fs-8">Thoughts, stories and ideas.</p>
                                 </div>

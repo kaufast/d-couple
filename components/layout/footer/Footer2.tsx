@@ -10,7 +10,7 @@ export default function Footer() {
                         <div className="col-lg-4 col-md-7 pe-lg-5">
                             <Link className="navbar-brand d-flex align-items-center gap-1" href="/">
                                 <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={16} height={16} alt="Logo" />
-                                <strong className="fs-5 text-nowrap">Foks.</strong>
+                                <strong className="fs-5 text-nowrap">dcouple.</strong>
                             </Link>
                             <p className="fs-7 text-dark mt-2 mb-3">Crafted for writers and storytellers, Oris offers a modern, timeless space where your words truly belong.</p>
                             <p className="fs-8 fw-bold text-uppercase mb-2">Follow Us</p>
@@ -42,7 +42,7 @@ export default function Footer() {
                                 </a>
                             </div>
                             <p className="text-500 m-0 mt-5">
-                                © 2025 <span className="text-dark">Foks</span>. All Rights Reserved.
+                                © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                             </p>
                         </div>
                         <div className="col-lg-8">

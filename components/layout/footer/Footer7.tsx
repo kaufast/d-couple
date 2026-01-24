@@ -28,7 +28,7 @@ export default function Footer7() {
                             <div>
                                 <Link className="navbar-brand d-flex align-items-center gap-1" href="/">
                                     <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" alt="Logo" width={24} height={24} />
-                                    <strong className="fs-5 text-nowrap">Foks.</strong>
+                                    <strong className="fs-5 text-nowrap">dcouple.</strong>
                                 </Link>
                                 <p className="fs-7 text-dark mt-4 mb-4">Crafted for writers and storytellers, Oris offers a modern, timeless space where your words truly belong.</p>
                                 <Link href="/page-contact" className="btn btn-outline px-0 bg-transparent border-0">
@@ -45,7 +45,7 @@ export default function Footer7() {
                                     </span>
                                 </Link>
                                 <p className="text-500 m-0 mt-5">
-                                    © 2025 <span className="text-dark">Foks</span>. All Rights Reserved.
+                                    © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                                 </p>
                             </div>
                         </div>

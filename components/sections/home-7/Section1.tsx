@@ -36,7 +36,7 @@ export default function Section1() {
                                 <div className="author-card style-1">
                                     <div className="card-img-container">
                                         <Link href="/page-author" className="card-img">
-                                            <Image className="cover-image" src="/assets/imgs/template/author/author-12.webp" alt="foks" width={60} height={60} />
+                                            <Image className="cover-image" src="/assets/imgs/template/author/author-12.webp" alt="d-couple" width={60} height={60} />
                                         </Link>
                                     </div>
                                     <div className="card-body">

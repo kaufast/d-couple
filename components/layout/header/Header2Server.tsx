@@ -20,7 +20,7 @@ export default function Header2Server() {
                             <div className="d-flex align-items-center gap-5">
                                 <Link className="navbar-brand d-flex align-items-center gap-1" href="/">
                                     <Image className="dark-mode-invert" src="/assets/imgs/template/logo/favicon.svg" width={16} height={16} alt="Logo" priority={true} />
-                                    <strong className="fs-5 text-nowrap">Foks.</strong>
+                                    <strong className="fs-5 text-nowrap">dcouple.</strong>
                                 </Link>
                                 <div className="navbar-collapse d-none d-lg-block" id="navbarNav">
                                     <MainMenu />

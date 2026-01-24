@@ -21,8 +21,57 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-    title: "Strategic Accountability Hub - Institutional Oversight & Governance",
-    description: "Corporate governance oversight, civic mobility, and asset preservation tracking platform with 10,000+ institutional profiles.",
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://d-couple.com'),
+    title: {
+        default: "Strategic Accountability Hub - Institutional Oversight & Governance",
+        template: "%s | Strategic Accountability Hub"
+    },
+    description: "Corporate governance oversight, civic mobility, and asset preservation tracking platform with 10,000+ institutional profiles. Track entities, submit reports, and access strategic intelligence.",
+    keywords: ["corporate governance", "institutional oversight", "asset preservation", "civic mobility", "accountability", "compliance tracking", "entity directory", "strategic intelligence"],
+    authors: [{ name: "Strategic Accountability Hub" }],
+    creator: "Strategic Accountability Hub",
+    publisher: "Strategic Accountability Hub",
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
+    openGraph: {
+        type: "website",
+        locale: "en_US",
+        url: "https://d-couple.com",
+        siteName: "Strategic Accountability Hub",
+        title: "Strategic Accountability Hub - Institutional Oversight & Governance",
+        description: "Corporate governance oversight, civic mobility, and asset preservation tracking platform with 10,000+ institutional profiles.",
+        images: [
+            {
+                url: "/assets/imgs/template/logo/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Strategic Accountability Hub",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Strategic Accountability Hub - Institutional Oversight & Governance",
+        description: "Corporate governance oversight, civic mobility, and asset preservation tracking platform.",
+        images: ["/assets/imgs/template/logo/og-image.jpg"],
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
+    verification: {
+        google: process.env.GOOGLE_SITE_VERIFICATION,
+    },
 };
 
 export default function RootLayout({

@@ -74,234 +74,17 @@ export default function MainMenu() {
         <ul className="navbar-nav">
             <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
-                    <span>Home</span>
+                    <span>Overview</span>
                 </Link>
                 <ul className="dropdown-menu">
                     <li>
                         <Link className="dropdown-item" href="/">
-                            Home 1
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-2">
-                            Home 2
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-3">
-                            Home 3
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-4">
-                            Home 4
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-5">
-                            Home 5
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-6">
-                            Home 6
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-7">
-                            Home 7
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/index-8">
-                            Home 8
-                        </Link>
-                    </li>
-                </ul>
-            </li>
-            <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
-                    <span>Features</span>
-                </Link>
-                <ul className="dropdown-menu">
-                    <li className="nav-item-has-child">
-                        <Link className="dropdown-item has-child" href="#">
-                            Post headers
-                        </Link>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link className="dropdown-item" href="/single-1">
-                                    Single 1
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-2">
-                                    Single 2
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-3">
-                                    Single 3
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-4">
-                                    Single 4
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-5">
-                                    Single 5
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-6">
-                                    Single 6
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/single-7">
-                                    Single 7
-                                </Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="nav-item-has-child">
-                        <Link className="dropdown-item has-child" href="#">
-                            Archive layouts
-                        </Link>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link className="dropdown-item" href="/archive-1">
-                                    Archive 1
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-2">
-                                    Archive 2
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-3">
-                                    Archive 3
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-4">
-                                    Archive 4
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-5">
-                                    Archive 5
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-6">
-                                    Archive 6
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-7">
-                                    Archive 7
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-8">
-                                    Archive 8
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/archive-9">
-                                    Archive 9
-                                </Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li className="nav-item-has-child">
-                        <Link className="dropdown-item has-child" href="#">
-                            Portfolio
-                        </Link>
-                        <ul className="sub-menu">
-                            <li>
-                                <Link className="dropdown-item" href="/portfolio">
-                                    Portfolio
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="dropdown-item" href="/portfolio-details">
-                                    Portfolio Details
-                                </Link>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li className="nav-item mega-menu-item">
-                <Link className="nav-link dropdown-toggle dropdown-mega-menu link-effect-1" href="#">
-                    <span>Trending</span>
-                </Link>
-                <div className="sub-mega-menu">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6 col-12 col-lg-6">
-                                <div className="flash-news d-flex flex-column">
-                                    <span className="fs-8 fw-bold text-uppercase">Flash news</span>
-                                    {flashNewsData.map((card, idx) => (
-                                        <CardBlog3 key={idx} card={card} idx={idx} />
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-md-6 col-12">
-                                <div className="block-comment">
-                                    <p className="fs-8 fw-bold text-uppercase mb-3">Most comments</p>
-                                    <ul className="list-unstyled ps-0">
-                                        {mostCommentsData.map((card, idx) => (
-                                            <MostCommentsItem key={idx} card={card} idx={idx} isLast={idx === mostCommentsData.length - 1} />
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="block-tag pt-2">
-                                    <p className="fs-8 fw-bold text-uppercase mb-3">Popular tags</p>
-                                    <ul className="list-unstyled d-flex flex-wrap gap-2 ps-0">
-                                        {cardTagPopupSearch1.map((card, idx) => (
-                                            <TagList key={idx} card={card} idx={idx} />
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li className="nav-item dropdown">
-                <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
-                    <span>Pages</span>
-                </Link>
-                <ul className="dropdown-menu">
-                    <li>
-                        <Link className="dropdown-item" href="/about-me">
-                            About me
+                            Home
                         </Link>
                     </li>
                     <li>
                         <Link className="dropdown-item" href="/about-us">
-                            About us
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/page-author">
-                            Author posts
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/page-search-results">
-                            Search results
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className="dropdown-item" href="/page-term">
-                            Term &amp; Condition
+                            About Us
                         </Link>
                     </li>
                     <li>
@@ -309,9 +92,70 @@ export default function MainMenu() {
                             Contact
                         </Link>
                     </li>
+                </ul>
+            </li>
+            <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
+                    <span>Oversight Directory</span>
+                </Link>
+                <ul className="dropdown-menu">
                     <li>
-                        <Link className="dropdown-item" href="/page-login">
-                            Login
+                        <Link className="dropdown-item" href="/directory">
+                            Entity Directory
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/reports/submit">
+                            Submit Report
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/admin">
+                            Admin Dashboard
+                        </Link>
+                    </li>
+                </ul>
+            </li>
+            <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
+                    <span>Mobility Resources</span>
+                </Link>
+                <ul className="dropdown-menu">
+                    <li>
+                        <Link className="dropdown-item" href="/portal">
+                            Strategic Portal
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/portal/asset-preservation">
+                            Asset Preservation
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/portal/relocation">
+                            Relocation Strategies
+                        </Link>
+                    </li>
+                </ul>
+            </li>
+            <li className="nav-item dropdown">
+                <Link className="nav-link dropdown-toggle link-effect-1 " href="#">
+                    <span>Field Intel</span>
+                </Link>
+                <ul className="dropdown-menu">
+                    <li>
+                        <Link className="dropdown-item" href="/directory">
+                            Browse Reports
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/reports/submit">
+                            Submit Intelligence
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="dropdown-item" href="/login">
+                            Access Portal
                         </Link>
                     </li>
                 </ul>

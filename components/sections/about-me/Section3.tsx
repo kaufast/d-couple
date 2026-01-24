@@ -77,7 +77,7 @@ export default function Section3() {
                                         {testimonialsData.map((testimonial, idx) => (
                                             <div className="swiper-slide" key={idx} onClick={() => handleThumbClick(idx)} style={{ cursor: "pointer" }}>
                                                 <div className={`avatar avatar-lg rounded-6 m-0 overflow-hidden border-4 border-white shadow-1 ${zIndexClasses[idx]} hover-up-scale`}>
-                                                    <Image className="cover-image rounded-6" src={testimonial.avatar} alt="foks" width={80} height={80} />
+                                                    <Image className="cover-image rounded-6" src={testimonial.avatar} alt="d-couple" width={80} height={80} />
                                                 </div>
                                             </div>
                                         ))}
