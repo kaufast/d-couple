@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server';
+import { createClient, createAdminClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -10,7 +10,7 @@ export const revalidate = 3600;
 
 // Generate static params for top entities
 export async function generateStaticParams() {
-  const supabase = await createClient();
+  const supabase = createAdminClient();
 
   // Pre-render top 100 entities by governance score
   const { data: entities } = await supabase
@@ -185,7 +185,7 @@ export default async function EntityPage({
                       <strong className="text-capitalize">
                         {category.replace(/_/g, ' ')}:
                       </strong>{' '}
-                      {count}
+                      {count as number}
                     </li>
                   ))}
                 </ul>

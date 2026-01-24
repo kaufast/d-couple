@@ -7,10 +7,10 @@ import { z } from 'zod';
 export const reportSchema = z.object({
   entity_id: z.string().uuid('Invalid entity ID'),
   category: z.enum(['compliance', 'asset_preservation', 'relocation', 'policy_strategy'], {
-    errorMap: () => ({ message: 'Please select a valid category' }),
+    message: 'Please select a valid category',
   }),
   classification: z.enum(['unclassified', 'restricted', 'confidential_internal'], {
-    errorMap: () => ({ message: 'Please select a valid classification level' }),
+    message: 'Please select a valid classification level',
   }),
   title: z
     .string()

@@ -46,14 +46,13 @@ export async function generatePasskeyRegistrationOptions() {
 
   const excludeCredentials =
     existingCredentials?.map((cred) => ({
-      id: Buffer.from(cred.credential_id, 'base64'),
-      type: 'public-key' as const,
+      id: cred.credential_id,
     })) || [];
 
   const options = await generateRegistrationOptions({
     rpName: RP_NAME,
     rpID: RP_ID,
-    userID: user.id,
+    userID: new TextEncoder().encode(user.id),
     userName: user.email || 'user',
     userDisplayName: user.email || 'User',
     attestationType: 'none',
@@ -97,14 +96,14 @@ export async function verifyPasskeyRegistration(response: any, challenge: string
       return { error: 'Verification failed' };
     }
 
-    const { credentialID, credentialPublicKey, counter } = verification.registrationInfo;
+    const { credential } = verification.registrationInfo;
 
     // Store credential in database
     const { error } = await supabase.from('webauthn_credentials').insert({
       user_id: user.id,
-      credential_id: Buffer.from(credentialID).toString('base64'),
-      public_key: Buffer.from(credentialPublicKey).toString('base64'),
-      counter,
+      credential_id: Buffer.from(credential.id).toString('base64'),
+      public_key: Buffer.from(credential.publicKey).toString('base64'),
+      counter: credential.counter || 0,
       device_name: 'Passkey', // Can be customized by user
       last_used_at: new Date().toISOString(),
     });
@@ -159,9 +158,9 @@ export async function verifyPasskeyAuthentication(response: any, challenge: stri
       expectedChallenge: challenge,
       expectedOrigin: ORIGIN,
       expectedRPID: RP_ID,
-      authenticator: {
-        credentialID: Buffer.from(credential.credential_id, 'base64'),
-        credentialPublicKey: Buffer.from(credential.public_key, 'base64'),
+      credential: {
+        id: credential.credential_id,
+        publicKey: Buffer.from(credential.public_key, 'base64'),
         counter: credential.counter,
       },
     });

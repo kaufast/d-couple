@@ -32,7 +32,7 @@ export async function submitContactForm(formData: FormData) {
   if (!validation.success) {
     return {
       error: 'Validation failed',
-      details: validation.error.errors[0].message,
+      details: validation.error.issues[0].message,
     };
   }
 

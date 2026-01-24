@@ -52,7 +52,7 @@ export function PasskeyManager() {
       }
 
       // Step 2: Prompt user to create passkey
-      const registrationResponse = await startRegistration(optionsResult.options);
+      const registrationResponse = await startRegistration({ optionsJSON: optionsResult.options });
 
       // Step 3: Send response to server for verification
       const verificationResult = await verifyPasskeyRegistration(

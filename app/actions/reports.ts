@@ -5,7 +5,7 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
-import { redirect } from 'next/redirect';
+import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { reportSchema, reportUpdateSchema, reportModerationSchema } from '@/lib/validations/report';
 import { sanitizeHTML, sanitizePlainText } from '@/lib/utils/sanitize';
@@ -55,7 +55,7 @@ export async function submitReport(formData: FormData) {
   if (!validation.success) {
     return {
       error: 'Validation failed',
-      details: validation.error.errors[0].message,
+      details: validation.error.issues[0].message,
     };
   }
 
@@ -67,7 +67,7 @@ export async function submitReport(formData: FormData) {
 
   // Determine initial status based on user role
   const status =
-    profile.role === 'verified_analyst' || profile.role === 'admin'
+    profile?.role === 'verified_analyst' || profile?.role === 'admin'
       ? 'approved'
       : 'under_review';
 
@@ -155,7 +155,7 @@ export async function updateReport(formData: FormData) {
   if (!validation.success) {
     return {
       error: 'Validation failed',
-      details: validation.error.errors[0].message,
+      details: validation.error.issues[0].message,
     };
   }
 
@@ -271,7 +271,7 @@ export async function moderateReport(formData: FormData) {
   if (!validation.success) {
     return {
       error: 'Validation failed',
-      details: validation.error.errors[0].message,
+      details: validation.error.issues[0].message,
     };
   }
 
