@@ -36,7 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   })) || [];
 
-  return [
+  // Static strategic pages
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -50,17 +51,61 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/governance`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/reports/submit`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/about-us`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/privacy`,
+      url: `${baseUrl}/page-contact`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.4,
+      priority: 0.5,
     },
+  ];
+
+  // Strategic sector category pages
+  const strategicSectors = [
+    'capital-lab',
+    'logistics-autonomy',
+    'sovereign-tech',
+    'jurisdictional-law',
+    'field-intel',
+    'work-trade-autonomy',
+    'eu-funding',
+    'privacy-tech',
+    'compliance',
+    'tech-sovereignty',
+  ];
+
+  const sectorUrls: MetadataRoute.Sitemap = strategicSectors.map((sector) => ({
+    url: `${baseUrl}/category/${sector}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily',
+    priority: 0.75,
+  }));
+
+  return [
+    ...staticPages,
+    ...sectorUrls,
     ...entityUrls,
     ...reportUrls,
   ];

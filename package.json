@@ -32,6 +32,7 @@
         "react-hot-toast": "^2.6.0",
         "react-modal-video": "^2.0.2",
         "resend": "^6.8.0",
+        "schema-dts": "^1.1.5",
         "split-text": "^1.0.0",
         "swiper": "^11.2.5",
         "wowjs": "^1.1.3",

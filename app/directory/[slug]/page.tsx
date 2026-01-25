@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils/dates';
 import Layout from '@/components/layout/Layout';
+import { generateEntityMetadata } from '@/lib/seo/metadata';
+import { generateEntitySchema, generateBreadcrumbSchema } from '@/lib/seo/structured-data';
 
 // Revalidate every hour (ISR)
 export const revalidate = 3600;
@@ -34,7 +36,7 @@ export async function generateMetadata({
 
   const { data: entity } = await supabase
     .from('entities')
-    .select('name, sector, governance_score, description')
+    .select('name, slug, sector, governance_score, description, headquarters')
     .eq('slug', params.slug)
     .single();
 
@@ -44,15 +46,15 @@ export async function generateMetadata({
     };
   }
 
-  return {
-    title: `${entity.name} - Strategic Accountability Hub`,
-    description: entity.description || `Governance oversight and compliance reports for ${entity.name} in the ${entity.sector || 'various'} sector. Governance Score: ${entity.governance_score}/100.`,
-    openGraph: {
-      title: entity.name,
-      description: `${entity.sector || 'Entity'} - Governance Score: ${entity.governance_score}`,
-      type: 'website',
-    },
-  };
+  // Use programmatic metadata generator
+  return generateEntityMetadata({
+    name: entity.name,
+    slug: entity.slug,
+    description: entity.description,
+    category: entity.sector,
+    accountability_score: entity.governance_score,
+    headquarters: entity.headquarters,
+  });
 }
 
 export default async function EntityPage({
@@ -95,8 +97,34 @@ export default async function EntityPage({
     {} as Record<string, number>
   ) || {};
 
+  // Generate structured data for SEO
+  const entitySchema = generateEntitySchema({
+    name: entity.name,
+    slug: entity.slug,
+    description: entity.description,
+    category: entity.sector,
+    accountability_score: entity.governance_score,
+    headquarters: entity.headquarters,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Directory', url: '/directory' },
+    { name: entity.name, url: `/directory/${entity.slug}` },
+  ]);
+
   return (
     <Layout headerStyle={1} footerStyle={1}>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(entitySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <div className="container py-5">
         {/* Entity Header */}
         <div className="row mb-4">

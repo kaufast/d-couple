@@ -4,6 +4,7 @@ import PreviousHero from "@/components/sections/home-4/Section1";
 import Section2 from "@/components/sections/home-1/Section4";
 import Section3 from "@/components/sections/home-1/Section3";
 import type { Metadata } from 'next';
+import { generateOrganizationSchema } from '@/lib/seo/structured-data';
 
 export const metadata: Metadata = {
     title: "Strategic Accountability Hub - Track Institutional Governance & Civic Mobility",
@@ -15,8 +16,16 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+    const organizationSchema = generateOrganizationSchema();
+
     return (
         <Layout headerStyle={4} footerStyle={4}>
+            {/* JSON-LD Organization Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+            />
+
             <FeaturedArticleHero />
             <PreviousHero />
             <Section2 classList="text-start" />

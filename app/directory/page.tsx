@@ -3,11 +3,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
 import { SectorFilter } from '@/components/directory/SectorFilter';
+import { generateDirectoryMetadata } from '@/lib/seo/metadata';
+import { generateDirectoryListSchema } from '@/lib/seo/structured-data';
 
-export const metadata: Metadata = {
-  title: 'Entity Directory - Strategic Accountability Hub',
-  description: 'Browse institutional profiles with governance scores, compliance reports, and strategic oversight data.',
-};
+export const metadata: Metadata = generateDirectoryMetadata();
 
 // Revalidate every 5 minutes
 export const revalidate = 300;
@@ -49,8 +48,25 @@ export default async function DirectoryPage({
 
   const totalPages = count ? Math.ceil(count / perPage) : 0;
 
+  // Generate ItemList structured data for current page entities
+  const directoryListSchema = entities ? generateDirectoryListSchema(
+    entities.map((entity) => ({
+      name: entity.name,
+      slug: entity.slug,
+      description: entity.description,
+    }))
+  ) : null;
+
   return (
     <Layout headerStyle={1} footerStyle={1}>
+      {/* JSON-LD Structured Data for Entity Listings */}
+      {directoryListSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(directoryListSchema) }}
+        />
+      )}
+
       <div className="container py-5">
         <div className="row mb-4">
           <div className="col-12">
