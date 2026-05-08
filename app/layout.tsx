@@ -7,7 +7,10 @@ import "@/public/assets/css/main.css";
 import type { Metadata } from "next";
 import { DM_Sans, Bricolage_Grotesque } from "next/font/google";
 import ThemeScript from "@/components/ThemeScript";
+import { Analytics } from "@/components/Analytics";
 import { CookieConsent } from "@/components/gdpr/CookieConsent";
+import { generateWebSiteSchema } from "@/lib/seo/advanced-schemas";
+import { generateLLMMetaTags, generateAICrawlersMeta } from "@/lib/seo/llm-optimization";
 
 const dmSans = DM_Sans({
     subsets: ["latin"],
@@ -72,6 +75,10 @@ export const metadata: Metadata = {
     verification: {
         google: process.env.GOOGLE_SITE_VERIFICATION,
     },
+    other: {
+        ...generateLLMMetaTags(),
+        ...generateAICrawlersMeta(),
+    },
 };
 
 export default function RootLayout({
@@ -79,10 +86,18 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const webSiteSchema = generateWebSiteSchema();
+
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`${dmSans.variable} ${bricolageGrotesque.variable}`}>
+                {/* WebSite Schema with Sitelinks SearchBox for Google */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+                />
                 <ThemeScript />
+                <Analytics />
                 {children}
                 <CookieConsent />
             </body>
