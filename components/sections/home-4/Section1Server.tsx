@@ -202,7 +202,7 @@ export default function Section1Server() {
             <div className="container">
                 <div className="row g-4">
                     <div className="col-12">
-                        <div className="swiper slider-3">
+                        <div className="swiper slider-3" style={{ minHeight: '120px' }}>
                             <SwiperDynamicServer className="swiper-wrapper" slidesPerView={1} spaceBetween={24} loop={true} autoplay={{ delay: 3000 }} breakpoints={{ 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}>
                                 {sliderData.map((card, idx) => (
                                     <div className="swiper-slide" key={idx}>

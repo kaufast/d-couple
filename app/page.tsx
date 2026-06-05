@@ -26,6 +26,15 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
             />
 
+            {/* Preload LCP hero image to reduce resource load delay */}
+            <link
+                rel="preload"
+                href="/assets/imgs/page/img-89.webp"
+                as="image"
+                type="image/webp"
+                fetchPriority="high"
+            />
+
             <FeaturedArticleHero />
             <PreviousHero />
             <Section2 classList="text-start" />
