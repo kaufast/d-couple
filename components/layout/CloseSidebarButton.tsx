@@ -16,6 +16,7 @@ export default function CloseSidebarButton({ onClick, className = "" }: CloseSid
             }}
             role="button"
             tabIndex={0}
+            aria-label="Close menu"
             onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                     e.preventDefault();

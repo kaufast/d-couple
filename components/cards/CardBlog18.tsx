@@ -48,8 +48,8 @@ export default function CardBlog18({ card, idx }: CardProps) {
                     </Link>
                 </h3>
                 <p className="text-truncate-4 mb-5">{card.description}</p>
-                <Link href={card.linkPost} className="btn btn-outline" aria-label={`Read more about ${card.title}`}>
-                    <span className="text-nowrap">Read more</span>
+                <Link href={card.linkPost} className="btn btn-outline" aria-label={`Read full report: ${card.title}`}>
+                    <span className="text-nowrap">Read full report</span>
                     <span className="group-icon">
                         <span className="group-icon-inner dark-mode-invert">
                             <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">

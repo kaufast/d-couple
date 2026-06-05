@@ -32,11 +32,11 @@ export default function CardBlog2({ card, idx }: CardProps) {
                         <span className="text-2">{card.category}</span>
                     </span>
                 </Link>
-                <h5 className="mb-2 mt-2 hover-underline">
+                <h3 className="h5 mb-2 mt-2 hover-underline">
                     <Link href={card.linkPost} className="text-truncate-2">
                         <span className="card-title">{card.title}</span>
                     </Link>
-                </h5>
+                </h3>
                 <p className="fs-7 text-truncate-3">{card.description}</p>
                 <div className="information pt-3 mt-3 border-top">
                     <Link href={card.linkAuthor} className="author">

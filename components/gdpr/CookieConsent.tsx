@@ -36,7 +36,7 @@ export function CookieConsent() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-8 mb-3 mb-lg-0">
-            <h5 className="mb-2">Cookie Consent</h5>
+            <p className="h5 mb-2">Cookie Consent</p>
             <p className="mb-0">
               This site uses essential cookies for authentication and session
               management. We also use analytics cookies to improve our service.{' '}
