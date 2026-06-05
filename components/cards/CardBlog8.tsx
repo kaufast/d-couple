@@ -52,7 +52,7 @@ export default function CardBlog8({ card, idx }: CardProps) {
                     <div className="information pt-4">
                         <Link href={card.linkAuthor} className="author">
                             <span className="author-img">
-                                <Image className="size-32" src={card.imgAuthor} alt={card.author} width={32} height={32} />
+                                <Image className="size-32" src={card.imgAuthor} alt="" width={32} height={32} />
                             </span>
                             <span className="author-info">{card.author}</span>
                         </Link>

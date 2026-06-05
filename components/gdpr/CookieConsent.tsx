@@ -36,8 +36,8 @@ export function CookieConsent() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-8 mb-3 mb-lg-0">
-            <p className="h5 mb-2">Cookie Consent</p>
-            <p className="mb-0">
+            <p className="h5 mb-2 text-white">Cookie Consent</p>
+            <p className="mb-0 text-white" style={{ opacity: 0.9 }}>
               This site uses essential cookies for authentication and session
               management. We also use analytics cookies to improve our service.{' '}
               <a

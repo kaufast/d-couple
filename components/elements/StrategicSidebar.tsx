@@ -12,8 +12,8 @@ export default function StrategicSidebar() {
 
             {/* Submit Intel CTA */}
             <div className="card border-300 rounded-6 p-4 bg-dark text-white">
-                <h3 className="fs-6 fw-bold mb-2">See a Violation?</h3>
-                <p className="fs-8 mb-3">
+                <h3 className="fs-6 fw-bold mb-2 text-white">See a Violation?</h3>
+                <p className="fs-8 mb-3 text-white" style={{ opacity: 0.9 }}>
                     Help strengthen oversight by submitting field intelligence on monopoly behavior.
                 </p>
                 <a

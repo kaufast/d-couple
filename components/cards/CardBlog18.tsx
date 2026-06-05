@@ -28,7 +28,7 @@ export default function CardBlog18({ card, idx }: CardProps) {
                     <div className="d-flex align-items-center gap-2">
                         <Link href={card.linkAuthor} className="author">
                             <span className="author-img">
-                                <Image src={card.imgAuthor} alt={card.author} width={24} height={24} />
+                                <Image src={card.imgAuthor} alt="" width={24} height={24} />
                             </span>
                             <span className="author-info fs-8">{card.author}</span>
                         </Link>

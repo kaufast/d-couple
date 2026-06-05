@@ -167,7 +167,7 @@ export default function Footer() {
                                 <span className="text-500">|</span>
                                 <Link href="/page-contact" className="text-600 hover-text-dark">Contact</Link>
                             </div>
-                            <p className="text-500 m-0">
+                            <p className="text-600 m-0">
                                 © 2025 <span className="text-dark">dcouple</span>. All Rights Reserved.
                             </p>
                         </div>
