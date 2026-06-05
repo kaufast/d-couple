@@ -43,11 +43,11 @@ export default function CardBlog8({ card, idx }: CardProps) {
                             <span className="text fs-8 fw-medium">{card.readTime}</span>
                         </div>
                     </div>
-                    <h5 className="mb-2 mt-2 hover-underline">
+                    <h3 className="h5 mb-2 mt-2 hover-underline">
                         <Link href={card.linkPost} className="text-truncate-2">
                             <span className="card-title">{card.title}</span>
                         </Link>
-                    </h5>
+                    </h3>
                     <p className="fs-6 text-dark text-truncate-2 mb-0">{card.description}</p>
                     <div className="information pt-4">
                         <Link href={card.linkAuthor} className="author">
@@ -56,7 +56,7 @@ export default function CardBlog8({ card, idx }: CardProps) {
                             </span>
                             <span className="author-info">{card.author}</span>
                         </Link>
-                        <Link href={card.linkPost} className="btn btn-outline">
+                        <Link href={card.linkPost} className="btn btn-outline" aria-label={`Read more about ${card.title}`}>
                             <span className="text-nowrap">Read more</span>
                             <span className="group-icon">
                                 <span className="group-icon-inner dark-mode-invert">

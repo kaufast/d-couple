@@ -22,7 +22,7 @@ export default function Section3Server() {
                                         <path fillRule="evenodd" clipRule="evenodd" d="M1 2.5C7.90356 2.5 13.5 8.09644 13.5 15H15C15 7.26801 8.73199 1 1 1V2.5ZM8 15C8 11.134 4.86599 8 1 8V6.5C5.69442 6.5 9.5 10.3056 9.5 15H8ZM2.5 15C2.5 14.1716 1.82843 13.5 1 13.5V12C2.65685 12 4 13.3431 4 15H2.5Z" fill="#A8A8A8" />
                                     </svg>
                                 </div>
-                                <h4 className="mb-2">Subscribe to our newsletter</h4>
+                                <h2 className="h4 mb-2">Subscribe to our newsletter</h2>
                                 <p className="fs-7 text-700">Get the best blog stories into your inbox!</p>
                             </div>
                             <div className="col-lg-7 col-md-10 col-12 mx-auto position-relative">

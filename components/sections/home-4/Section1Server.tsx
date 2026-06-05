@@ -218,7 +218,7 @@ export default function Section1Server() {
                         <CardBlog8 card={featuredCardData} idx={0} />
                         <div className="col-12 pt-4 pb-3">
                             <div className="block-header">
-                                <h6 className="mb-0"># Intelligence Ledger</h6>
+                                <h3 className="h6 mb-0"># Intelligence Ledger</h3>
                             </div>
                         </div>
                         <Section1Interactive newsData={latestNewsData} />

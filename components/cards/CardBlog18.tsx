@@ -42,13 +42,13 @@ export default function CardBlog18({ card, idx }: CardProps) {
                         <span className="text fs-8 fw-medium">{card.readTime}</span>
                     </div>
                 </div>
-                <h4 className="mb-3 mt-3 hover-underline">
+                <h3 className="h4 mb-3 mt-3 hover-underline">
                     <Link href={card.linkPost} className="text-truncate-2">
                         <span className="card-title">{card.title}</span>
                     </Link>
-                </h4>
+                </h3>
                 <p className="text-truncate-4 mb-5">{card.description}</p>
-                <Link href={card.linkPost} className="btn btn-outline">
+                <Link href={card.linkPost} className="btn btn-outline" aria-label={`Read more about ${card.title}`}>
                     <span className="text-nowrap">Read more</span>
                     <span className="group-icon">
                         <span className="group-icon-inner dark-mode-invert">

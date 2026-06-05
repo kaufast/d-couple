@@ -19,11 +19,11 @@ export default function MostCommentsItem({ card, idx, isLast = false }: CardProp
                         <span className="badge-number me-3 align-self-start">{card.number}</span>
                     </div>
                     <div className="d-flex flex-column">
-                        <h6 className="mb-1 hover-underline">
+                        <p className="h6 mb-1 hover-underline">
                             <Link href={card.linkPost} className="text-truncate-2">
                                 <span className="card-title fs-6">{card.title}</span>
                             </Link>
-                        </h6>
+                        </p>
                     </div>
                 </div>
             </div>

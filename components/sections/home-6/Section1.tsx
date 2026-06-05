@@ -98,7 +98,7 @@ export default function Section1() {
                                     <div className="swiper-slide" key={idx}>
                                         <div className="card-blog card-feature hover-up hover-zoom-image pt-1 flex-column shadow-0 flex-lg-row bg-body border-0">
                                             <Link href={card.linkPost} className="card-img rounded-6 overflow-hidden">
-                                                <Image className="image cover-image" src={card.img} alt="d-couple" width={600} height={400} />
+                                                <Image className="image cover-image" src={card.img} alt={card.title} width={600} height={400} priority />
                                             </Link>
                                             <div className="card-body">
                                                 <Link href={card.linkCategory} className="tag has-dot text-nowrap">
@@ -107,16 +107,16 @@ export default function Section1() {
                                                         <span className="text-2">{card.category}</span>
                                                     </span>
                                                 </Link>
-                                                <h4 className="mb-2 mt-2 hover-underline">
+                                                <h2 className="h4 mb-2 mt-2 hover-underline">
                                                     <Link href={card.linkPost} className="text-truncate-2">
                                                         <span className="card-title">{card.title}</span>
                                                     </Link>
-                                                </h4>
+                                                </h2>
                                                 <p className="fs-7 text-truncate-3">{card.description}</p>
                                                 <div className="information pt-3 mt-3 border-top">
                                                     <Link href={card.linkAuthor} className="author">
                                                         <span className="author-img">
-                                                            <Image src={card.imgAuthor} alt="d-couple" width={24} height={24} />
+                                                            <Image src={card.imgAuthor} alt={card.author} width={24} height={24} />
                                                         </span>
                                                         <span className="author-info">{card.author}</span>
                                                     </Link>

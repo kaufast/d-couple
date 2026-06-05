@@ -19,11 +19,11 @@ export default function CardBlog10({ card, idx }: CardProps) {
         <div className={card.classList || ""}>
             <div className={`card-blog card-3 hover-up hover-zoom-image ${card.classCard || ""}`}>
                 <div className="card-body">
-                    <h6 className="mb-2 hover-underline">
+                    <h3 className="h6 mb-2 hover-underline">
                         <Link href={card.linkPost} className="text-truncate-2">
                             <span className="card-title">{card.title}</span>
                         </Link>
-                    </h6>
+                    </h3>
                     <div className="information">
                         <div className="date">
                             <span className="dot"></span>

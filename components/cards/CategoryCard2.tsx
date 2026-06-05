@@ -22,11 +22,11 @@ export default function CategoryCard2({ card, idx, noColumnClasses = false }: Ca
                     </Link>
                 </div>
                 <div className="card-body text-center">
-                    <h6 className="mb-1 hover-underline">
+                    <h3 className="h6 mb-1 hover-underline">
                         <Link href={card.linkCategory} className="card-title">
                             {card.category}
                         </Link>
-                    </h6>
+                    </h3>
                     <p className="fs-8 mb-0">{card.articlesCount} articles</p>
                 </div>
             </div>

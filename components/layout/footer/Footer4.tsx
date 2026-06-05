@@ -134,17 +134,17 @@ export default function Footer() {
                             </Link>
                             <p className="fs-7 text-700 mt-3 mb-3">dcouple. is a strategic research hub dedicated to monitoring centralized actors and fostering sovereign economic growth through regional alternatives.</p>
                             <div className="d-inline-flex group-social-icons">
-                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up">
+                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up" aria-label="Facebook">
                                     <svg className="dark-mode-invert" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                         <path fillRule="evenodd" clipRule="evenodd" d="M9.00319 15.9377C12.948 15.4442 16 12.0785 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.8172 2.67341 15.0099 6.25 15.808V10.4303H4.5V8H6.25V6.93969C6.25 4.22193 7.28461 2.96364 9.95128 2.96364C10.4559 2.96364 11.3277 3.06264 11.6854 3.16164V5.37163C11.497 5.35247 11.168 5.34289 10.7625 5.34289C9.45307 5.34289 9 5.8379 9 7.12812V8H11.5577L11.1106 10.4303H9.00319V15.9377Z" fill="#171717" />
                                     </svg>
                                 </a>
-                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up">
+                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up" aria-label="X (Twitter)">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter-x" viewBox="0 0 16 16">
                                         <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                                     </svg>
                                 </a>
-                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up">
+                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up" aria-label="Instagram">
                                     <svg className="dark-mode-invert" xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
                                         <path
                                             fillRule="evenodd"
@@ -154,7 +154,7 @@ export default function Footer() {
                                         />
                                     </svg>
                                 </a>
-                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up">
+                                <a href="#" className="icon-shape icon-30 bg-card border-300 rounded-4 hover-up" aria-label="YouTube">
                                     <svg className="dark-mode-invert" xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none">
                                         <path fillRule="evenodd" clipRule="evenodd" d="M12.4695 0.29272C13.0722 0.45406 13.5459 0.92772 13.7073 1.53045C13.9988 2.62182 14 4.90022 14 4.90022C14 4.90022 14 7.17859 13.7073 8.26999C13.5459 8.87279 13.0722 9.34639 12.4695 9.50769C11.3782 9.80049 6.99998 9.80049 6.99998 9.80049C6.99998 9.80049 2.62183 9.80049 1.53045 9.50769C0.92773 9.34639 0.45407 8.87279 0.29272 8.26999C-2.98023e-08 7.17859 0 4.90022 0 4.90022C0 4.90022 -2.98023e-08 2.62182 0.29272 1.53045C0.45407 0.92772 0.92773 0.45406 1.53045 0.29272C2.62183 8.9407e-08 6.99998 0 6.99998 0C6.99998 0 11.3782 8.9407e-08 12.4695 0.29272ZM9.2362 4.90045L5.59906 7.00019V2.80067L9.2362 4.90045Z" fill="#171717" />
                                     </svg>
