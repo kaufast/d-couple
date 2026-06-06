@@ -47,5 +47,5 @@ export function generateStaticParams() {
 
 export default async function CategoryPage({ params }: Props) {
     const { slug } = await params;
-    redirect(`/directory?category=${slug}`);
+    redirect(`/directory?sector=${slug}`);
 }

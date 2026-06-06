@@ -24,7 +24,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://d-couple.com'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://www.d-couple.com'),
     title: {
         default: "Strategic Accountability Hub - Institutional Oversight & Governance",
         template: "%s | Strategic Accountability Hub"

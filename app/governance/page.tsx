@@ -1,5 +1,6 @@
 import Layout from '@/components/layout/Layout';
 import type { Metadata } from 'next';
+import { generateFAQSchema } from '@/lib/seo/advanced-schemas';
 
 export const metadata: Metadata = {
   title: 'Research Ethics & Data Handling Protocol - dcouple.',
@@ -7,8 +8,37 @@ export const metadata: Metadata = {
 };
 
 export default function GovernancePage() {
+  const faqSchema = generateFAQSchema([
+    {
+      question: "What is the Motivated Intruder Test?",
+      answer: "The Motivated Intruder Test assesses if a well-resourced actor could 'single out' a source by combining your report with other public data. Associates must apply this test before any submission to ensure proper anonymization."
+    },
+    {
+      question: "How should I anonymize financial data in reports?",
+      answer: "Use generalization by replacing exact values with ranges (e.g., 'Revenue between €40M-€50M' instead of '€42,847,392'). You can also use perturbation to add statistical noise to data points while maintaining patterns."
+    },
+    {
+      question: "What channels are approved for submitting Field Intel?",
+      answer: "Use the Submit Intelligence portal which automatically strips metadata including location data, device ID, browser fingerprint, and IP geolocation. Avoid standard email and public messaging platforms."
+    },
+    {
+      question: "What is the incident reporting timeframe?",
+      answer: "If you suspect a breach or a 'motivated intruder' attempt, you must notify the Security Desk at privacy@dcouple.com within 2 hours. Examples include suspicious login attempts, unexpected data access requests, or social engineering contact from monitored entities."
+    },
+    {
+      question: "What conflicts of interest must be disclosed?",
+      answer: "Associates must disclose any financial or institutional ties to monitored actors, including employment relationships, equity holdings, advisory board memberships, and research grants before engaging in specific oversight audits."
+    }
+  ]);
+
   return (
     <Layout headerStyle={4} footerStyle={4}>
+      {/* FAQ Schema for Google Rich Results */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <div className="container py-5">
         <div className="row justify-content-center">
           <div className="col-lg-10">

@@ -6,6 +6,12 @@ import Section3 from "@/components/sections/home-5/Section2";
 import Section4 from "@/components/sections/home-5/Section3";
 import Section5 from "@/components/sections/home-5/Section4";
 import Section6 from "@/components/sections/home-1/Section3";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
+
 export default function Home_5() {
     return (
         <Layout headerStyle={5} footerStyle={5}>

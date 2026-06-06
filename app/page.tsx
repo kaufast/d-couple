@@ -9,6 +9,9 @@ import { generateOrganizationSchema } from '@/lib/seo/structured-data';
 export const metadata: Metadata = {
     title: "Strategic Accountability Hub - Track Institutional Governance & Civic Mobility",
     description: "Access comprehensive oversight data on 10,000+ entities. Track corporate governance, asset preservation strategies, and civic mobility patterns through field intelligence reports.",
+    alternates: {
+        canonical: '/',
+    },
     openGraph: {
         title: "Strategic Accountability Hub - Institutional Oversight Intelligence",
         description: "Track corporate governance, asset preservation, and civic mobility across 10,000+ institutional profiles.",

@@ -5,6 +5,7 @@ import Layout from '@/components/layout/Layout';
 import { SectorFilter } from '@/components/directory/SectorFilter';
 import { generateDirectoryMetadata } from '@/lib/seo/metadata';
 import { generateDirectoryListSchema } from '@/lib/seo/structured-data';
+import { generateDatasetSchema } from '@/lib/seo/advanced-schemas';
 
 export const metadata: Metadata = generateDirectoryMetadata();
 
@@ -14,12 +15,12 @@ export const revalidate = 300;
 export default async function DirectoryPage({
   searchParams,
 }: {
-  searchParams: Promise<{ sector?: string; page?: string }>;
+  searchParams: Promise<{ sector?: string; category?: string; page?: string }>;
 }) {
   const supabase = await createClient();
   const params = await searchParams;
 
-  const sector = params.sector;
+  const sector = params.sector || params.category;
   const page = parseInt(params.page || '1', 10);
   const perPage = 20;
   const offset = (page - 1) * perPage;
@@ -57,8 +58,17 @@ export default async function DirectoryPage({
     }))
   ) : null;
 
+  // Generate Dataset schema for Google Dataset Search
+  const datasetSchema = generateDatasetSchema();
+
   return (
     <Layout headerStyle={1} footerStyle={1}>
+      {/* JSON-LD Dataset Schema for Google Dataset Search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }}
+      />
+
       {/* JSON-LD Structured Data for Entity Listings */}
       {directoryListSchema && (
         <script
